@@ -1,0 +1,51 @@
+name: autopilot
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Executar sem Jev/OpenAI"
+        required: false
+        default: "false"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      MLOPS_USE_JEV: "1"
+      MLOPS_USE_LLM: "1"
+      MLOPS_AUTONOMY: full
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+      TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+      MLOPS_ALERT_WEBHOOK: ${{ secrets.MLOPS_ALERT_WEBHOOK }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Hydrate demo artifacts
+        run: python scripts/make_demo_assets.py
+      - name: Run autopilot
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python scripts/run_autopilot.py --mode full --dry-run
+          elif [ -z "${TYPESAFE_API_KEY:-}" ] || [ -z "${OPENAI_API_KEY:-}" ]; then
+            MLOPS_USE_JEV=0 MLOPS_USE_LLM=0 python scripts/run_autopilot.py --mode full
+          else
+            python scripts/run_autopilot.py --mode full
+          fi
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autopilot-${{ github.run_id }}
+          path: artifacts/autopilot/
+          retention-days: 14

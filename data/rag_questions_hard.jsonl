@@ -1,0 +1,15 @@
+{"question":"Qual percentual de chance de atraso grave separa a aprovação da análise manual?","expected_doc_ids":["credito_001"],"expected_terms":["12%","18%"]}
+{"question":"Quanto custa uma mensagem de WhatsApp comparada a um telefonema?","expected_doc_ids":["cobranca_001"],"expected_terms":["5,00","18,00"]}
+{"question":"Como a rede resolve várias previsões ao mesmo tempo?","expected_doc_ids":["modelo_001"],"expected_terms":["GRU","quatro cabeças"]}
+{"question":"Posso colar o CPF do cliente no texto enviado ao assistente?","expected_doc_ids":["lgpd_001"],"expected_terms":["mascarados","PII"]}
+{"question":"Qual múltiplo da renda é permitido no perfil mais agressivo?","expected_doc_ids":["limite_001"],"expected_terms":["2,8","renda"]}
+{"question":"O que fazer quando o indicador de estabilidade passa de 0,20?","expected_doc_ids":["credito_001","faq_001"],"expected_terms":["investigação","PSI"]}
+{"question":"Cliente com dívida antiga e retorno esperado negativo deve receber ligação?","expected_doc_ids":["cobranca_001"],"expected_terms":["EV negativo","telefone"]}
+{"question":"Quanto da renda pode ser comprometido no preset equilibrado?","expected_doc_ids":["limite_001"],"expected_terms":["2,0","renda"]}
+{"question":"Como o assistente deve reagir a uma ordem escondida dentro de um documento?","expected_doc_ids":["lgpd_001"],"expected_terms":["injeção de instruções","allowlist"]}
+{"question":"O modelo pode ser usado comercialmente apenas com os dados atuais?","expected_doc_ids":["modelo_001"],"expected_terms":["sintéticos","reais"]}
+{"question":"Que técnicas mostram quais variáveis mais pesaram na decisão?","expected_doc_ids":["credito_001"],"expected_terms":["SHAP","gradiente"]}
+{"question":"Qual é o prazo de guarda dos registros do agente?","expected_doc_ids":["lgpd_001"],"expected_terms":["90 dias","logs"]}
+{"question":"Como priorizar quem tem dívida média mas grande chance de pagar?","expected_doc_ids":["cobranca_001","faq_001"],"expected_terms":["valor esperado"]}
+{"question":"A avaliação pode rodar no aparelho do cliente sem mandar comportamento para a nuvem?","expected_doc_ids":["lgpd_001"],"expected_terms":["dispositivo","nuvem"]}
+{"question":"O que muda entre as safras usadas para treinar e as usadas para testar?","expected_doc_ids":["modelo_001"],"expected_terms":["1 e 2","5 e 6"]}

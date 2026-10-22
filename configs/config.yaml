@@ -1,0 +1,66 @@
+project_root: .
+data_dir: data
+artifacts_dir: artifacts
+
+data:
+  n_clients: 6000
+  months: 24
+  seed: 42
+  feature_months: 12
+  performance_months: 6
+  safras: [1, 2, 3, 4, 5, 6]
+  train_safras: [1, 2]
+  validation_safras: [3, 4]
+  test_safras: [5, 6]
+
+model:
+  seq_features:
+    - compras_qtd
+    - ticket_medio
+    - valor_total
+    - parcelas_medias
+    - categoria_diversidade
+    - pct_credito
+    - pct_pix
+    - pct_boleto
+    - atraso_dias
+    - utilizacao_limite
+    - dias_sem_transacao
+    - sessoes_app
+    - tempo_medio_sessao
+    - velocidade_scroll
+    - cliques
+    - contatos_cobranca
+    - promessas_pagamento
+    - valor_pago
+    - saldo_open_finance
+    - entradas_open_finance
+    - saidas_open_finance
+  static_numeric:
+    - idade
+    - renda_mensal
+    - tempo_relacionamento_meses
+    - limite_atual
+    - bureau_score
+    - contas_open_finance
+    - produtos_ativos
+  static_categorical:
+    - regiao
+    - segmento
+  edge:
+    epochs: 35
+    batch_size: 64
+    learning_rate: 0.001
+    gru_units: 32
+    dense_units: 32
+  random_state: 42
+
+thresholds:
+  pagou_30d: 0.45
+  inadimplente_90d: 0.18
+  aceita_limite: 0.50
+  consumo_alto: 0.50
+
+mlflow:
+  enabled: false
+  experiment_name: edge-credit-intelligence

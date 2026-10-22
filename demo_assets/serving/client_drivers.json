@@ -1,0 +1,2816 @@
+{
+  "C000001": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04000094160437584
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.03665890172123909
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.02707049250602722
+    }
+  ],
+  "C000003": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.16093230247497559
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.07308457791805267
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.044240061193704605
+    }
+  ],
+  "C000004": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.06611549854278564
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.03988194465637207
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03540327027440071
+    }
+  ],
+  "C000006": [
+    {
+      "feature": "bureau_score",
+      "attribution": 0.045915454626083374
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.028406620025634766
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.028280984610319138
+    }
+  ],
+  "C000008": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.07013784348964691
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.056556977331638336
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.04623493179678917
+    }
+  ],
+  "C000010": [
+    {
+      "feature": "idade",
+      "attribution": 0.07647856324911118
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.06504111737012863
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.03989911451935768
+    }
+  ],
+  "C000012": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03231961652636528
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.024376297369599342
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.0243549644947052
+    }
+  ],
+  "C000014": [
+    {
+      "feature": "regiao=Centro-Oeste",
+      "attribution": 0.024771684780716896
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02445748634636402
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.012066580355167389
+    }
+  ],
+  "C000018": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.06509525328874588
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.03285020962357521
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.02347128838300705
+    }
+  ],
+  "C000019": [
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.061067309230566025
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.03829518333077431
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.033195462077856064
+    }
+  ],
+  "C000023": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.01976085640490055
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.01466912217438221
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.01409232709556818
+    }
+  ],
+  "C000026": [
+    {
+      "feature": "idade",
+      "attribution": 0.03131050616502762
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.024788949638605118
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.023506484925746918
+    }
+  ],
+  "C000028": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04905741661787033
+    },
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.04561271890997887
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.03905949369072914
+    }
+  ],
+  "C000031": [
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.04728909581899643
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.04697370156645775
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.044723156839609146
+    }
+  ],
+  "C000032": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.08235051482915878
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.058869313448667526
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03055388294160366
+    }
+  ],
+  "C000033": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03308676928281784
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.026709694415330887
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02503223717212677
+    }
+  ],
+  "C000034": [
+    {
+      "feature": "idade",
+      "attribution": 0.056651048362255096
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04110576584935188
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03874771669507027
+    }
+  ],
+  "C000042": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0871296226978302
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.04068978875875473
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.03779492899775505
+    }
+  ],
+  "C000043": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.08785372972488403
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.06915085762739182
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.04780111089348793
+    }
+  ],
+  "C000045": [
+    {
+      "feature": "bureau_score",
+      "attribution": 0.14431802928447723
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.11520899087190628
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.052328791469335556
+    }
+  ],
+  "C000046": [
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.03626944497227669
+    },
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.03434091433882713
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0249494481831789
+    }
+  ],
+  "C000047": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.05216400325298309
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04617921635508537
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.02106323465704918
+    }
+  ],
+  "C000050": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03834609314799309
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.03484148159623146
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.028768641874194145
+    }
+  ],
+  "C000054": [
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.026343226432800293
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.02555185556411743
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.02482767403125763
+    }
+  ],
+  "C000060": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.07156503945589066
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.021364230662584305
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.01948617957532406
+    }
+  ],
+  "C000062": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.049534283578395844
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.04002424329519272
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.028224444016814232
+    }
+  ],
+  "C000064": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.038295432925224304
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.03636859357357025
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.023631062358617783
+    }
+  ],
+  "C000069": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.032204773277044296
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.023907477036118507
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.023780902847647667
+    }
+  ],
+  "C000073": [
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.0472957082092762
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.04090943932533264
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03690638020634651
+    }
+  ],
+  "C000074": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04708297550678253
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.02476206049323082
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.01568439230322838
+    }
+  ],
+  "C000075": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.05870189517736435
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.02526533603668213
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.012288113124668598
+    }
+  ],
+  "C000076": [
+    {
+      "feature": "idade",
+      "attribution": 0.038262274116277695
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03691418468952179
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03143419697880745
+    }
+  ],
+  "C000078": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04488758742809296
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.039835378527641296
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.0332057848572731
+    }
+  ],
+  "C000080": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.05508463457226753
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.03621775656938553
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.029559656977653503
+    }
+  ],
+  "C000081": [
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.0414418950676918
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03182673081755638
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.01927082985639572
+    }
+  ],
+  "C000082": [
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.06116223707795143
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.032040178775787354
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.026986347511410713
+    }
+  ],
+  "C000084": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04459941387176514
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.030238326638936996
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.028485678136348724
+    }
+  ],
+  "C000087": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04698682203888893
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.021633939817547798
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.014887277968227863
+    }
+  ],
+  "C000092": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.05412937328219414
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.026318015530705452
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.024772072210907936
+    }
+  ],
+  "C000095": [
+    {
+      "feature": "idade",
+      "attribution": 0.048538222908973694
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.03383825346827507
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03226131200790405
+    }
+  ],
+  "C000098": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03758864104747772
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.03460533171892166
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.031292811036109924
+    }
+  ],
+  "C000101": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04077458381652832
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.026849906891584396
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.021776914596557617
+    }
+  ],
+  "C000103": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.06609341502189636
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.027217695489525795
+    },
+    {
+      "feature": "regiao=Centro-Oeste",
+      "attribution": 0.021736664697527885
+    }
+  ],
+  "C000104": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.053693611174821854
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.050447769463062286
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04023710638284683
+    }
+  ],
+  "C000106": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.05729132145643234
+    },
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.04487660899758339
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.040176037698984146
+    }
+  ],
+  "C000110": [
+    {
+      "feature": "idade",
+      "attribution": 0.023362191393971443
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.017227815464138985
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.013239075429737568
+    }
+  ],
+  "C000113": [
+    {
+      "feature": "regiao=Norte",
+      "attribution": 0.033394038677215576
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.032235223799943924
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.022665392607450485
+    }
+  ],
+  "C000114": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.05876636132597923
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.037992630153894424
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.03400680795311928
+    }
+  ],
+  "C000115": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03920409083366394
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.02625337243080139
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.01950182020664215
+    }
+  ],
+  "C000117": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.04232887178659439
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.035581301897764206
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.035335540771484375
+    }
+  ],
+  "C000124": [
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.01822633668780327
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.014550650492310524
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.014456489123404026
+    }
+  ],
+  "C000125": [
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.03247758001089096
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.029874548316001892
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.027053041383624077
+    }
+  ],
+  "C000127": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04674524813890457
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.03968832641839981
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03480755537748337
+    }
+  ],
+  "C000129": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03183543309569359
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.023541752249002457
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.020519666373729706
+    }
+  ],
+  "C000132": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.05591311305761337
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.035206388682127
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.031090084463357925
+    }
+  ],
+  "C000134": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04155740886926651
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.023559007793664932
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.015575814992189407
+    }
+  ],
+  "C000136": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.035513512790203094
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.03284389153122902
+    },
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.029603147879242897
+    }
+  ],
+  "C000139": [
+    {
+      "feature": "bureau_score",
+      "attribution": 0.04627058655023575
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.030432969331741333
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.013040424324572086
+    }
+  ],
+  "C000146": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03749426081776619
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03086959198117256
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.02120123617351055
+    }
+  ],
+  "C000147": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.023155394941568375
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.020074183121323586
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.015964321792125702
+    }
+  ],
+  "C000148": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.05818885937333107
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.05562477558851242
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.048504456877708435
+    }
+  ],
+  "C000149": [
+    {
+      "feature": "regiao=Norte",
+      "attribution": 0.036086007952690125
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03436001390218735
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.027430038899183273
+    }
+  ],
+  "C000154": [
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.07282128930091858
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.049789126962423325
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.025634922087192535
+    }
+  ],
+  "C000169": [
+    {
+      "feature": "idade",
+      "attribution": 0.054822538048028946
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.03193923830986023
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.031350307166576385
+    }
+  ],
+  "C000171": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.07136834412813187
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.03345080837607384
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.031277790665626526
+    }
+  ],
+  "C000175": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.0949438139796257
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.06814096868038177
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.05335963889956474
+    }
+  ],
+  "C000176": [
+    {
+      "feature": "idade",
+      "attribution": 0.06826828420162201
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.048750050365924835
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04840191826224327
+    }
+  ],
+  "C000177": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04849424585700035
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.04432211443781853
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.026605596765875816
+    }
+  ],
+  "C000178": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.1069611981511116
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.040981583297252655
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.036513444036245346
+    }
+  ],
+  "C000181": [
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.03685539960861206
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.026404554024338722
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.024742765352129936
+    }
+  ],
+  "C000184": [
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.031426556408405304
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03125974163413048
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.015590665861964226
+    }
+  ],
+  "C000189": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.03786163032054901
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03458374738693237
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.027201902121305466
+    }
+  ],
+  "C000190": [
+    {
+      "feature": "idade",
+      "attribution": 0.04006723687052727
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03996846079826355
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.029750337824225426
+    }
+  ],
+  "C000193": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02436540648341179
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.02165227383375168
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.01886548101902008
+    }
+  ],
+  "C000194": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.026712853461503983
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.02530784159898758
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.025239191949367523
+    }
+  ],
+  "C000201": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04177584499120712
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.022510100156068802
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.016770336776971817
+    }
+  ],
+  "C000208": [
+    {
+      "feature": "idade",
+      "attribution": 0.053483039140701294
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.04364335909485817
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.022932833060622215
+    }
+  ],
+  "C000214": [
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.058548640459775925
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04216483235359192
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.03979962319135666
+    }
+  ],
+  "C000216": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.04983334243297577
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.04785125330090523
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.026660216972231865
+    }
+  ],
+  "C000219": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.03563478961586952
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.026702674105763435
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.01873466558754444
+    }
+  ],
+  "C000221": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04349791631102562
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.017826730385422707
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.014775006100535393
+    }
+  ],
+  "C000222": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0226057767868042
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.018372241407632828
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.015934530645608902
+    }
+  ],
+  "C000224": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.02013086900115013
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.019799860194325447
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.016190500929951668
+    }
+  ],
+  "C000226": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.06638479232788086
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.06481242179870605
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.057386089116334915
+    }
+  ],
+  "C000227": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.054268937557935715
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.022219466045498848
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.021191081032156944
+    }
+  ],
+  "C000228": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.06754902750253677
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.038818977773189545
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.027992475777864456
+    }
+  ],
+  "C000230": [
+    {
+      "feature": "regiao=Norte",
+      "attribution": 0.07071373611688614
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.04650115966796875
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04228655621409416
+    }
+  ],
+  "C000240": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.051091164350509644
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.029531024396419525
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.028689395636320114
+    }
+  ],
+  "C000241": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0808165967464447
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03463354706764221
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.020954200997948647
+    }
+  ],
+  "C000243": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04937005788087845
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.01610180176794529
+    },
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.010173594579100609
+    }
+  ],
+  "C000247": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.052505042403936386
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04627794399857521
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03165292367339134
+    }
+  ],
+  "C000248": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.07771696895360947
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.06322536617517471
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.03427284210920334
+    }
+  ],
+  "C000249": [
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.03611697629094124
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02678740955889225
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.02144198678433895
+    }
+  ],
+  "C000257": [
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.04979853704571724
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.03008832223713398
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.022178910672664642
+    }
+  ],
+  "C000261": [
+    {
+      "feature": "regiao=Norte",
+      "attribution": 0.03847232460975647
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0315394289791584
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.016698837280273438
+    }
+  ],
+  "C000265": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.0750063955783844
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.018834823742508888
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.014441929757595062
+    }
+  ],
+  "C000269": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.029740625992417336
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.021711884066462517
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.021051086485385895
+    }
+  ],
+  "C000271": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.048380814492702484
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.04618106409907341
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.030500613152980804
+    }
+  ],
+  "C000272": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.06916214525699615
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03385351598262787
+    },
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.025332767516374588
+    }
+  ],
+  "C000275": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.04196535423398018
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.03291218355298042
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.028485670685768127
+    }
+  ],
+  "C000286": [
+    {
+      "feature": "segmento=Novo",
+      "attribution": 0.06291714310646057
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04353984072804451
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.033471111208200455
+    }
+  ],
+  "C000298": [
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.030759086832404137
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.027423229068517685
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.025506455451250076
+    }
+  ],
+  "C000300": [
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.0522468276321888
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.040399327874183655
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03814363479614258
+    }
+  ],
+  "C000307": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.055924635380506516
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03520650044083595
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.029219185933470726
+    }
+  ],
+  "C000309": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03798170015215874
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.03529541194438934
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.03417431563138962
+    }
+  ],
+  "C000310": [
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.04236723482608795
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.027371784672141075
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02360038086771965
+    }
+  ],
+  "C000313": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.09229540079832077
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.04105117544531822
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03971370309591293
+    }
+  ],
+  "C000316": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.07868638634681702
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.040848903357982635
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03868978098034859
+    }
+  ],
+  "C000321": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.0419057160615921
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.038992565125226974
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.03165744990110397
+    }
+  ],
+  "C000322": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02124064415693283
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.012351829558610916
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.011908230371773243
+    }
+  ],
+  "C000330": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03347679227590561
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.019343817606568336
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.01864909566938877
+    }
+  ],
+  "C000333": [
+    {
+      "feature": "regiao=Centro-Oeste",
+      "attribution": 0.020477773621678352
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.017674284055829048
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.015617788769304752
+    }
+  ],
+  "C000335": [
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.10411745309829712
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.053521446883678436
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.02811278961598873
+    }
+  ],
+  "C000339": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04076943174004555
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.039466146379709244
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.033863674849271774
+    }
+  ],
+  "C000347": [
+    {
+      "feature": "idade",
+      "attribution": 0.04824221134185791
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.02747778221964836
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.02100955694913864
+    }
+  ],
+  "C000348": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0511731393635273
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.04761853441596031
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.025308191776275635
+    }
+  ],
+  "C000352": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.06850122660398483
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04525572061538696
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.03374015539884567
+    }
+  ],
+  "C000357": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04844750463962555
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.02825811505317688
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.026280073449015617
+    }
+  ],
+  "C000358": [
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.06740222871303558
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.05515894293785095
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.04014904797077179
+    }
+  ],
+  "C000359": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.02494044415652752
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.01864371821284294
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.017065634950995445
+    }
+  ],
+  "C000360": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.035329435020685196
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.030809281393885612
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.022412134334445
+    }
+  ],
+  "C000364": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.054828252643346786
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.028200678527355194
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.02710968628525734
+    }
+  ],
+  "C000367": [
+    {
+      "feature": "bureau_score",
+      "attribution": 0.04585505276918411
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.026911381632089615
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.025766920298337936
+    }
+  ],
+  "C000369": [
+    {
+      "feature": "bureau_score",
+      "attribution": 0.06435341387987137
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.06107484921813011
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04767131432890892
+    }
+  ],
+  "C000370": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03786984458565712
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.03724129498004913
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.03687126561999321
+    }
+  ],
+  "C000373": [
+    {
+      "feature": "idade",
+      "attribution": 0.08077467232942581
+    },
+    {
+      "feature": "regiao=Norte",
+      "attribution": 0.049411922693252563
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.04285644367337227
+    }
+  ],
+  "C000374": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04191840440034866
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.028660159558057785
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.008400604128837585
+    }
+  ],
+  "C000378": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04528656601905823
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.04357851296663284
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.016996219754219055
+    }
+  ],
+  "C000387": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.043913546949625015
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.043873757123947144
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.019804468378424644
+    }
+  ],
+  "C000389": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04461006447672844
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.02321140095591545
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.02071543224155903
+    }
+  ],
+  "C000391": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.039504338055849075
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.038346417248249054
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03759656473994255
+    }
+  ],
+  "C000395": [
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.10729613155126572
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.06248487904667854
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.05571486055850983
+    }
+  ],
+  "C000398": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.05066626891493797
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.029893599450588226
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.025232896208763123
+    }
+  ],
+  "C000399": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03999479115009308
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03481724485754967
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.03335743397474289
+    }
+  ],
+  "C000400": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03326127305626869
+    },
+    {
+      "feature": "tempo_medio_sessao",
+      "attribution": 0.02630266547203064
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.01916070282459259
+    }
+  ],
+  "C000402": [
+    {
+      "feature": "idade",
+      "attribution": 0.029562853276729584
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.014747066423296928
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.012192633002996445
+    }
+  ],
+  "C000403": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0723949447274208
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.041578132659196854
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03987589105963707
+    }
+  ],
+  "C000406": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.05938651040196419
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.040965110063552856
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.040015365928411484
+    }
+  ],
+  "C000411": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03826181963086128
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.033479075878858566
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02827477641403675
+    }
+  ],
+  "C000413": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.049015726894140244
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.02985987439751625
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.015274947509169579
+    }
+  ],
+  "C000414": [
+    {
+      "feature": "idade",
+      "attribution": 0.08211889863014221
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.060317512601614
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.04603269696235657
+    }
+  ],
+  "C000417": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.051398105919361115
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.027386190369725227
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.022802699357271194
+    }
+  ],
+  "C000420": [
+    {
+      "feature": "idade",
+      "attribution": 0.04141629859805107
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.034581489861011505
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.024346286430954933
+    }
+  ],
+  "C000423": [
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.026793505996465683
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.018627190962433815
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.01741606742143631
+    }
+  ],
+  "C000426": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.039155568927526474
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.03517075255513191
+    },
+    {
+      "feature": "utilizacao_max",
+      "attribution": 0.01992422714829445
+    }
+  ],
+  "C000432": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.0482541061937809
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04037036746740341
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.03455526754260063
+    }
+  ],
+  "C000434": [
+    {
+      "feature": "idade",
+      "attribution": 0.04990147799253464
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.04612068086862564
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.02192644029855728
+    }
+  ],
+  "C000441": [
+    {
+      "feature": "bureau_score",
+      "attribution": 0.1096733808517456
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04287057742476463
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.036983322352170944
+    }
+  ],
+  "C000449": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.04054293781518936
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.04025615006685257
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.034684307873249054
+    }
+  ],
+  "C000450": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.05385950952768326
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.014621025882661343
+    },
+    {
+      "feature": "pct_boleto",
+      "attribution": 0.014222543686628342
+    }
+  ],
+  "C000457": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.057548392564058304
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.04935247451066971
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.044657185673713684
+    }
+  ],
+  "C000458": [
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.03297090902924538
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.03173384442925453
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.031449053436517715
+    }
+  ],
+  "C000459": [
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.05584912374615669
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.048094168305397034
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.03242334723472595
+    }
+  ],
+  "C000467": [
+    {
+      "feature": "regiao=Centro-Oeste",
+      "attribution": 0.020187225192785263
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.017818285152316093
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.01679374650120735
+    }
+  ],
+  "C000468": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.046908896416425705
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03952160105109215
+    },
+    {
+      "feature": "regiao=Centro-Oeste",
+      "attribution": 0.034762073308229446
+    }
+  ],
+  "C000470": [
+    {
+      "feature": "idade",
+      "attribution": 0.023881366476416588
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.019431214779615402
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.018432816490530968
+    }
+  ],
+  "C000471": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.04164093732833862
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.029993759468197823
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.01677091419696808
+    }
+  ],
+  "C000474": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.045675333589315414
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.027259813621640205
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.015195396728813648
+    }
+  ],
+  "C000475": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.038533106446266174
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.036603931337594986
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.03566507250070572
+    }
+  ],
+  "C000476": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.0524124950170517
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.029710860922932625
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.02307853102684021
+    }
+  ],
+  "C000479": [
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.03367204964160919
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.02989019639790058
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.024819161742925644
+    }
+  ],
+  "C000481": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.030171677470207214
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.01365386787801981
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.012378755956888199
+    }
+  ],
+  "C000484": [
+    {
+      "feature": "regiao=Norte",
+      "attribution": 0.032849907875061035
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.02889883890748024
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.023151632398366928
+    }
+  ],
+  "C000489": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.06060812622308731
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.036705292761325836
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.03152377903461456
+    }
+  ],
+  "C000491": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.025758707895874977
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02569250389933586
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.022124160081148148
+    }
+  ],
+  "C000492": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03947828710079193
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.03465982899069786
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.027555158361792564
+    }
+  ],
+  "C000496": [
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.04636842757463455
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.017070654779672623
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.012004544027149677
+    }
+  ],
+  "C000500": [
+    {
+      "feature": "limite_atual",
+      "attribution": 0.07507365942001343
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.0656280443072319
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.04488096386194229
+    }
+  ],
+  "C000503": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.057549312710762024
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.03006681054830551
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.018094105646014214
+    }
+  ],
+  "C000505": [
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.05238673463463783
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.022696487605571747
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.01877448335289955
+    }
+  ],
+  "C000506": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.06331515312194824
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.06301767379045486
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.05757645145058632
+    }
+  ],
+  "C000507": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.01621595211327076
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.01224180031567812
+    },
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.01053687185049057
+    }
+  ],
+  "C000508": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.08070902526378632
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.061113327741622925
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.035531096160411835
+    }
+  ],
+  "C000513": [
+    {
+      "feature": "segmento=Alto Valor",
+      "attribution": 0.09315615892410278
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.09105436503887177
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.040247950702905655
+    }
+  ],
+  "C000514": [
+    {
+      "feature": "idade",
+      "attribution": 0.060773227363824844
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.053277432918548584
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.04693935438990593
+    }
+  ],
+  "C000516": [
+    {
+      "feature": "idade",
+      "attribution": 0.03164127096533775
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.028664272278547287
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.026831921190023422
+    }
+  ],
+  "C000522": [
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.054702796041965485
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.028231827542185783
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.027997901663184166
+    }
+  ],
+  "C000524": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.030321389436721802
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.017639607191085815
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.010537935420870781
+    }
+  ],
+  "C000526": [
+    {
+      "feature": "idade",
+      "attribution": 0.06404348462820053
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.06038524582982063
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.04579860344529152
+    }
+  ],
+  "C000527": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.041108474135398865
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.035881683230400085
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.03505902364850044
+    }
+  ],
+  "C000531": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.05174662545323372
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.04238056018948555
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03566303104162216
+    }
+  ],
+  "C000532": [
+    {
+      "feature": "idade",
+      "attribution": 0.04353270307183266
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.042778998613357544
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.01621733233332634
+    }
+  ],
+  "C000533": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.023013439029455185
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.021738046780228615
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.018370119854807854
+    }
+  ],
+  "C000534": [
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.07966209203004837
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.06818915903568268
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.037329256534576416
+    }
+  ],
+  "C000535": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.030512221157550812
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.029748233035206795
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.027194606140255928
+    }
+  ],
+  "C000536": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04470297694206238
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.03230806440114975
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.024335792288184166
+    }
+  ],
+  "C000542": [
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.05815490335226059
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.04922866448760033
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.02801731415092945
+    }
+  ],
+  "C000546": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.02960452064871788
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.02873677760362625
+    },
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.02285628765821457
+    }
+  ],
+  "C000547": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.028657754883170128
+    },
+    {
+      "feature": "segmento=Recuperacao",
+      "attribution": 0.02684723772108555
+    },
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.024228956550359726
+    }
+  ],
+  "C000549": [
+    {
+      "feature": "idade",
+      "attribution": 0.06525956839323044
+    },
+    {
+      "feature": "regiao=Nordeste",
+      "attribution": 0.03323201462626457
+    },
+    {
+      "feature": "consumo_sobre_renda",
+      "attribution": 0.03314647823572159
+    }
+  ],
+  "C000550": [
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.03551400452852249
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.022851627320051193
+    },
+    {
+      "feature": "produtos_ativos",
+      "attribution": 0.02060048282146454
+    }
+  ],
+  "C000551": [
+    {
+      "feature": "regiao=Sul",
+      "attribution": 0.054489489644765854
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02904270961880684
+    },
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.0222807414829731
+    }
+  ],
+  "C000552": [
+    {
+      "feature": "segmento=Varejo",
+      "attribution": 0.04651124030351639
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03995779901742935
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.02667047828435898
+    }
+  ],
+  "C000566": [
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.07619534432888031
+    },
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.04841019958257675
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.04344262182712555
+    }
+  ],
+  "C000575": [
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.04733843356370926
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.04447762295603752
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.030468454584479332
+    }
+  ],
+  "C000580": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.03229815140366554
+    },
+    {
+      "feature": "regiao=Norte",
+      "attribution": 0.02560790441930294
+    },
+    {
+      "feature": "bureau_score",
+      "attribution": 0.015564304776489735
+    }
+  ],
+  "C000584": [
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.11880149692296982
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.06554820388555527
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.029145052656531334
+    }
+  ],
+  "C000585": [
+    {
+      "feature": "tempo_relacionamento_meses",
+      "attribution": 0.011984894052147865
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.011309700086712837
+    },
+    {
+      "feature": "tendencia_consumo",
+      "attribution": 0.01130227092653513
+    }
+  ],
+  "C000590": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.02922738343477249
+    },
+    {
+      "feature": "contas_open_finance",
+      "attribution": 0.022958537563681602
+    },
+    {
+      "feature": "idade",
+      "attribution": 0.019771968945860863
+    }
+  ],
+  "C000592": [
+    {
+      "feature": "idade",
+      "attribution": 0.054586224257946014
+    },
+    {
+      "feature": "regiao=Sudeste",
+      "attribution": 0.03490009903907776
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.032782383263111115
+    }
+  ],
+  "C000597": [
+    {
+      "feature": "utilizacao_media",
+      "attribution": 0.028417296707630157
+    },
+    {
+      "feature": "limite_atual",
+      "attribution": 0.016197064891457558
+    },
+    {
+      "feature": "renda_mensal",
+      "attribution": 0.013067154213786125
+    }
+  ]
+}

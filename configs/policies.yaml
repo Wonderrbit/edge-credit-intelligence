@@ -1,0 +1,48 @@
+collection:
+  contact_cost: 12.0
+  recovered_fraction: 0.65
+  top_fraction: 0.20
+  actions:
+    nenhuma:
+      cost: 0.0
+      uplift: 0.00
+    lembrete:
+      cost: 2.0
+      uplift: 0.04
+    whatsapp:
+      cost: 5.0
+      uplift: 0.09
+    ligacao:
+      cost: 18.0
+      uplift: 0.16
+    negociacao:
+      cost: 35.0
+      uplift: 0.25
+
+limit:
+  margin: 0.035
+  lgd: 0.60
+  usage_rate: 0.55
+  presets:
+    conservador:
+      max_multiple_income: 1.5
+      max_growth: 1.25
+      risk_weight: 0.35
+      acceptance_weight: 0.25
+      consumption_weight: 0.15
+    equilibrado:
+      max_multiple_income: 2.0
+      max_growth: 1.60
+      risk_weight: 0.25
+      acceptance_weight: 0.35
+      consumption_weight: 0.25
+    crescimento:
+      max_multiple_income: 2.8
+      max_growth: 2.10
+      risk_weight: 0.15
+      acceptance_weight: 0.45
+      consumption_weight: 0.35
+
+risk:
+  approval_threshold: 0.18
+  review_threshold: 0.12

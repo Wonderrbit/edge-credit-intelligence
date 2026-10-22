@@ -1,0 +1,71 @@
+indicators:
+  - name: carteira_total
+    label: Carteira total
+    formula: soma(limite_atual)
+    source: serving_clients
+    freshness: diaria
+  - name: limite_medio
+    label: Limite medio
+    formula: media(limite_atual)
+    source: serving_clients
+    freshness: diaria
+  - name: renda_media
+    label: Renda media
+    formula: media(renda_mensal)
+    source: serving_clients
+    freshness: diaria
+  - name: pd_media_90d
+    label: PD media 90 dias
+    formula: media(p_inadimplente_90d)
+    source: modelo_edge
+    freshness: diaria
+  - name: perda_esperada
+    label: Perda esperada
+    formula: soma(p_inadimplente_90d * limite_atual * lgd)
+    source: modelo_edge
+    freshness: diaria
+  - name: taxa_atraso
+    label: Taxa de clientes em atraso
+    formula: media(valor_atrasado_cutoff > 0)
+    source: serving_clients
+    freshness: diaria
+  - name: valor_em_atraso
+    label: Valor total em atraso
+    formula: soma(valor_atrasado_cutoff)
+    source: serving_clients
+    freshness: diaria
+  - name: utilizacao_media
+    label: Utilizacao media do limite
+    formula: media(utilizacao_media)
+    source: serving_clients
+    freshness: diaria
+  - name: comprometimento_medio
+    label: Comprometimento medio de renda
+    formula: media(comprometimento_consumo)
+    source: serving_clients
+    freshness: diaria
+  - name: taxa_aprovacao
+    label: Taxa de aprovacao
+    formula: media(p_inadimplente_90d < threshold_aprovacao)
+    source: politica_credito
+    freshness: diaria
+  - name: ev_cobranca
+    label: EV total de cobranca
+    formula: soma(p_pagou_30d * valor_atrasado_cutoff * recovered_fraction - contact_cost)
+    source: politica_cobranca
+    freshness: diaria
+  - name: concentracao_top10
+    label: Concentracao top 10 clientes
+    formula: soma(top10 limite_atual) / soma(limite_atual)
+    source: serving_clients
+    freshness: diaria
+  - name: psi_score
+    label: PSI da distribuicao de score
+    formula: PSI(referencia, atual)
+    source: monitoring
+    freshness: diaria
+  - name: ece_pd_90d
+    label: ECE da PD 90 dias
+    formula: ECE(calibracao, atual)
+    source: monitoring
+    freshness: diaria

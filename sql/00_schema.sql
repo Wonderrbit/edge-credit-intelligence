@@ -1,0 +1,22 @@
+-- Schema lógico usado pelo pipeline local (DuckDB).
+-- As views são criadas pelo Python a partir de data/raw/*.parquet.
+--
+-- clientes(client_id, idade, renda_mensal, regiao, segmento,
+--          tempo_relacionamento_meses, limite_atual, bureau_score,
+--          contas_open_finance, produtos_ativos, persona, safra,
+--          cutoff_month, target_end_month)
+--
+-- painel(client_id, mes, data_ref, compras_qtd, ticket_medio, valor_total,
+--        parcelas_medias, categoria_diversidade, pct_credito, pct_debito,
+--        pct_pix, pct_boleto, atraso_dias, valor_atrasado, dias_sem_transacao,
+--        sessoes_app, tempo_medio_sessao, velocidade_scroll, cliques,
+--        contatos_cobranca, promessas_pagamento, pagamentos_realizados,
+--        valor_pago, utilizacao_limite, saldo_open_finance,
+--        entradas_open_finance, saidas_open_finance, score_bureau_mes,
+--        safra, cutoff_month, target_end_month)
+--
+-- targets(client_id, safra, cutoff_month, target_end_month, pagou_30d,
+--         inadimplente_90d, aceita_limite, consumo_alto, consumo_30d,
+--         elegivel_limite, valor_atrasado_cutoff)
+--
+-- tratamentos(client_id, acao, pagou_30d, valor_recuperado, custo_acao)

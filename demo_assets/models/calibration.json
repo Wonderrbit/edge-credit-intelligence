@@ -1,0 +1,14 @@
+{
+  "pagou_30d": {
+    "temperature": 1.5721363915179623
+  },
+  "inadimplente_90d": {
+    "temperature": 0.3433129109998303
+  },
+  "aceita_limite": {
+    "temperature": 5.669963864094296
+  },
+  "consumo_alto": {
+    "temperature": 0.8793453682564838
+  }
+}

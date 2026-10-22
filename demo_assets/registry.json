@@ -1,0 +1,124 @@
+{
+  "model_name": "edge_credit_multitask",
+  "version": "2026.10.22.1457",
+  "created_at": "2026-10-22T14:57:52.558865+00:00",
+  "n_clients": 600,
+  "n_features_sequence": 21,
+  "n_features_static": 20,
+  "n_parameters": 7172,
+  "model_path": "artifacts/models/edge_credit_multitask.keras",
+  "model_sha256": "2dd8938ee053bb1fa0f0ace5b1f5ef08bdf8ee68aeed26fb56c370695f7865da",
+  "calibration": {
+    "pagou_30d": {
+      "temperature": 1.5721363915179623,
+      "ece_before": 0.08768826871369015,
+      "ece_after": 0.10807328142892672,
+      "brier_before": 0.21314997971057892,
+      "brier_after": 0.21425086169286633
+    },
+    "inadimplente_90d": {
+      "temperature": 0.3433129109998303,
+      "ece_before": 0.13853002532352857,
+      "ece_after": 0.03878757418685394,
+      "brier_before": 0.12720191478729248,
+      "brier_after": 0.10492599407815273
+    },
+    "aceita_limite": {
+      "temperature": 5.669963864094296,
+      "ece_before": 0.19739666299440375,
+      "ece_after": 0.1086251932586478,
+      "brier_before": 0.2649081349372864,
+      "brier_after": 0.24806318694353785
+    },
+    "consumo_alto": {
+      "temperature": 0.8793453682564838,
+      "ece_before": 0.15132451072261105,
+      "ece_after": 0.14266045301578,
+      "brier_before": 0.21859794855117798,
+      "brier_after": 0.21842117026119093
+    }
+  },
+  "edge_metrics": {
+    "pagou_30d": {
+      "n": 201.0,
+      "positive_rate": 0.4975124378109453,
+      "roc_auc": 0.7320792079207921,
+      "pr_auc": 0.6549587023305883,
+      "ks": 0.4438613861386138,
+      "brier": 0.21425086169286633,
+      "log_loss": 0.6215628762901609,
+      "precision": 0.6589147286821705,
+      "recall": 0.85,
+      "f1": 0.7423580786026202,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.6484869327661327
+    },
+    "inadimplente_90d": {
+      "n": 201.0,
+      "positive_rate": 0.1691542288557214,
+      "roc_auc": 0.8578724903134907,
+      "pr_auc": 0.5358714391322982,
+      "ks": 0.575907009510391,
+      "brier": 0.10492599407815274,
+      "log_loss": 0.3271903300932157,
+      "precision": 0.5652173913043478,
+      "recall": 0.38235294117647056,
+      "f1": 0.45614035087719296,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.5238646053539548
+    },
+    "aceita_limite": {
+      "n": 201.0,
+      "positive_rate": 0.4129353233830846,
+      "roc_auc": 0.6476414131100674,
+      "pr_auc": 0.5399963325364012,
+      "ks": 0.2974269961200735,
+      "brier": 0.24806318694353785,
+      "log_loss": 0.6892600362419717,
+      "precision": 0.4645161290322581,
+      "recall": 0.8674698795180723,
+      "f1": 0.6050420168067228,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.5336165366660586
+    },
+    "consumo_alto": {
+      "n": 201.0,
+      "positive_rate": 0.2736318407960199,
+      "roc_auc": 0.6303860523038605,
+      "pr_auc": 0.3733693001361571,
+      "ks": 0.22752179327521793,
+      "brier": 0.21842117026119093,
+      "log_loss": 0.6282347793172011,
+      "precision": 0.3793103448275862,
+      "recall": 0.4,
+      "f1": 0.3893805309734513,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.3603895495591766
+    }
+  },
+  "thresholds": {
+    "pagou_30d": 0.45,
+    "inadimplente_90d": 0.18,
+    "aceita_limite": 0.5,
+    "consumo_alto": 0.5
+  },
+  "split": {
+    "train_safras": [
+      1,
+      2
+    ],
+    "validation_safras": [
+      3,
+      4
+    ],
+    "test_safras": [
+      5,
+      6
+    ]
+  },
+  "deployment": {
+    "mode": "edge_tfjs_and_api",
+    "privacy": "dados sensíveis podem ser pontuados no dispositivo",
+    "latency_target_ms": 15
+  }
+}

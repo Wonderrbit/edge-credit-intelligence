@@ -1,0 +1,1457 @@
+{
+  "baseline": {
+    "pagou_30d": {
+      "logistic": {
+        "n": 201.0,
+        "positive_rate": 0.4975124378109453,
+        "roc_auc": 0.751980198019802,
+        "pr_auc": 0.7387733465958751,
+        "ks": 0.3920792079207921,
+        "brier": 0.21619754258064072,
+        "log_loss": 0.6423662888323266,
+        "precision": 0.638095238095238,
+        "recall": 0.67,
+        "f1": 0.6536585365853659,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.7362020767306702,
+        "model": "logistic",
+        "target": "pagou_30d"
+      },
+      "lightgbm": {
+        "n": 201.0,
+        "positive_rate": 0.4975124378109453,
+        "roc_auc": 0.7504950495049505,
+        "pr_auc": 0.728185261988665,
+        "ks": 0.41297029702970295,
+        "brier": 0.25261000615686163,
+        "log_loss": 0.8331263483951112,
+        "precision": 0.6141732283464567,
+        "recall": 0.78,
+        "f1": 0.6872246696035242,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.7256529337818801,
+        "model": "lightgbm",
+        "target": "pagou_30d"
+      }
+    },
+    "inadimplente_90d": {
+      "logistic": {
+        "n": 201.0,
+        "positive_rate": 0.1691542288557214,
+        "roc_auc": 0.9383585769637196,
+        "pr_auc": 0.6494104334204606,
+        "ks": 0.8448397323001057,
+        "brier": 0.09314408332654986,
+        "log_loss": 0.3171254248689517,
+        "precision": 0.6046511627906976,
+        "recall": 0.7647058823529411,
+        "f1": 0.6753246753246753,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.637349689201229,
+        "model": "logistic",
+        "target": "inadimplente_90d"
+      },
+      "lightgbm": {
+        "n": 201.0,
+        "positive_rate": 0.1691542288557214,
+        "roc_auc": 0.936421275096865,
+        "pr_auc": 0.6882501533664903,
+        "ks": 0.8328636843959141,
+        "brier": 0.10184457046570189,
+        "log_loss": 0.4263909416868628,
+        "precision": 0.6486486486486487,
+        "recall": 0.7058823529411765,
+        "f1": 0.676056338028169,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.682132487610858,
+        "model": "lightgbm",
+        "target": "inadimplente_90d"
+      }
+    },
+    "aceita_limite": {
+      "logistic": {
+        "n": 201.0,
+        "positive_rate": 0.4129353233830846,
+        "roc_auc": 0.6108842148254033,
+        "pr_auc": 0.521164555478709,
+        "ks": 0.24484378190729017,
+        "brier": 0.2784927178898309,
+        "log_loss": 0.7840334473068094,
+        "precision": 0.4659090909090909,
+        "recall": 0.4939759036144578,
+        "f1": 0.47953216374269003,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.5168219426357813,
+        "model": "logistic",
+        "target": "aceita_limite"
+      },
+      "lightgbm": {
+        "n": 201.0,
+        "positive_rate": 0.4129353233830846,
+        "roc_auc": 0.6592811925668777,
+        "pr_auc": 0.5681592235012208,
+        "ks": 0.2696548907494385,
+        "brier": 0.2693412501599987,
+        "log_loss": 0.8731115441775473,
+        "precision": 0.573170731707317,
+        "recall": 0.5662650602409639,
+        "f1": 0.5696969696969697,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.5619578049945075,
+        "model": "lightgbm",
+        "target": "aceita_limite"
+      }
+    },
+    "consumo_alto": {
+      "logistic": {
+        "n": 201.0,
+        "positive_rate": 0.2736318407960199,
+        "roc_auc": 0.95280199252802,
+        "pr_auc": 0.8999214454965047,
+        "ks": 0.7789539227895392,
+        "brier": 0.0912046614100236,
+        "log_loss": 0.2981646977841284,
+        "precision": 0.7246376811594203,
+        "recall": 0.9090909090909091,
+        "f1": 0.8064516129032259,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.8990366956786063,
+        "model": "logistic",
+        "target": "consumo_alto"
+      },
+      "lightgbm": {
+        "n": 201.0,
+        "positive_rate": 0.2736318407960199,
+        "roc_auc": 0.9450809464508094,
+        "pr_auc": 0.8625394427566563,
+        "ks": 0.787920298879203,
+        "brier": 0.1078038621725211,
+        "log_loss": 0.4549103695694439,
+        "precision": 0.7258064516129032,
+        "recall": 0.8181818181818182,
+        "f1": 0.7692307692307693,
+        "threshold": 0.5,
+        "precision_curve_auc": -0.8610711869934062,
+        "model": "lightgbm",
+        "target": "consumo_alto"
+      }
+    }
+  },
+  "edge_raw": {
+    "pagou_30d": {
+      "n": 201.0,
+      "positive_rate": 0.4975124378109453,
+      "roc_auc": 0.7320792079207921,
+      "pr_auc": 0.6549587023305883,
+      "ks": 0.4438613861386138,
+      "brier": 0.21314998510858268,
+      "log_loss": 0.6270683338869819,
+      "precision": 0.6589147286821705,
+      "recall": 0.85,
+      "f1": 0.7423580786026202,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.6484869327661327
+    },
+    "inadimplente_90d": {
+      "n": 201.0,
+      "positive_rate": 0.1691542288557214,
+      "roc_auc": 0.8578724903134907,
+      "pr_auc": 0.5358714391322982,
+      "ks": 0.575907009510391,
+      "brier": 0.12720191254834853,
+      "log_loss": 0.41737974034920733,
+      "precision": 0.5652173913043478,
+      "recall": 0.38235294117647056,
+      "f1": 0.45614035087719296,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.5238646053539548
+    },
+    "aceita_limite": {
+      "n": 201.0,
+      "positive_rate": 0.4129353233830846,
+      "roc_auc": 0.6476414131100674,
+      "pr_auc": 0.5399963325364012,
+      "ks": 0.2974269961200735,
+      "brier": 0.2649081327810134,
+      "log_loss": 0.7305580760576463,
+      "precision": 0.4645161290322581,
+      "recall": 0.8674698795180723,
+      "f1": 0.6050420168067228,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.5336165366660586
+    },
+    "consumo_alto": {
+      "n": 201.0,
+      "positive_rate": 0.2736318407960199,
+      "roc_auc": 0.6303860523038605,
+      "pr_auc": 0.3733693001361571,
+      "ks": 0.22752179327521793,
+      "brier": 0.2185979440480535,
+      "log_loss": 0.6282084683054396,
+      "precision": 0.3793103448275862,
+      "recall": 0.4,
+      "f1": 0.3893805309734513,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.3603895495591766
+    }
+  },
+  "edge_calibrated": {
+    "pagou_30d": {
+      "n": 201.0,
+      "positive_rate": 0.4975124378109453,
+      "roc_auc": 0.7320792079207921,
+      "pr_auc": 0.6549587023305883,
+      "ks": 0.4438613861386138,
+      "brier": 0.21425086169286633,
+      "log_loss": 0.6215628762901609,
+      "precision": 0.6589147286821705,
+      "recall": 0.85,
+      "f1": 0.7423580786026202,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.6484869327661327
+    },
+    "inadimplente_90d": {
+      "n": 201.0,
+      "positive_rate": 0.1691542288557214,
+      "roc_auc": 0.8578724903134907,
+      "pr_auc": 0.5358714391322982,
+      "ks": 0.575907009510391,
+      "brier": 0.10492599407815274,
+      "log_loss": 0.3271903300932157,
+      "precision": 0.5652173913043478,
+      "recall": 0.38235294117647056,
+      "f1": 0.45614035087719296,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.5238646053539548
+    },
+    "aceita_limite": {
+      "n": 201.0,
+      "positive_rate": 0.4129353233830846,
+      "roc_auc": 0.6476414131100674,
+      "pr_auc": 0.5399963325364012,
+      "ks": 0.2974269961200735,
+      "brier": 0.24806318694353785,
+      "log_loss": 0.6892600362419717,
+      "precision": 0.4645161290322581,
+      "recall": 0.8674698795180723,
+      "f1": 0.6050420168067228,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.5336165366660586
+    },
+    "consumo_alto": {
+      "n": 201.0,
+      "positive_rate": 0.2736318407960199,
+      "roc_auc": 0.6303860523038605,
+      "pr_auc": 0.3733693001361571,
+      "ks": 0.22752179327521793,
+      "brier": 0.21842117026119093,
+      "log_loss": 0.6282347793172011,
+      "precision": 0.3793103448275862,
+      "recall": 0.4,
+      "f1": 0.3893805309734513,
+      "threshold": 0.5,
+      "precision_curve_auc": -0.3603895495591766
+    }
+  },
+  "calibration": {
+    "pagou_30d": {
+      "temperature": 1.5721363915179623,
+      "ece_before": 0.08768826871369015,
+      "ece_after": 0.10807328142892672,
+      "brier_before": 0.21314997971057892,
+      "brier_after": 0.21425086169286633
+    },
+    "inadimplente_90d": {
+      "temperature": 0.3433129109998303,
+      "ece_before": 0.13853002532352857,
+      "ece_after": 0.03878757418685394,
+      "brier_before": 0.12720191478729248,
+      "brier_after": 0.10492599407815273
+    },
+    "aceita_limite": {
+      "temperature": 5.669963864094296,
+      "ece_before": 0.19739666299440375,
+      "ece_after": 0.1086251932586478,
+      "brier_before": 0.2649081349372864,
+      "brier_after": 0.24806318694353785
+    },
+    "consumo_alto": {
+      "temperature": 0.8793453682564838,
+      "ece_before": 0.15132451072261105,
+      "ece_after": 0.14266045301578,
+      "brier_before": 0.21859794855117798,
+      "brier_after": 0.21842117026119093
+    }
+  },
+  "business": {
+    "collection": {
+      "n": 201,
+      "contatos_politica_atual": 201,
+      "contatos_politica_modelo": 40,
+      "recuperacao_estimada_atual": 7715.45,
+      "recuperacao_estimada_modelo": 7428.09,
+      "custo_atual": 2412.0,
+      "custo_modelo": 480.0,
+      "roi_atual": 2.1988,
+      "roi_modelo": 14.4752,
+      "reducao_contatos": 0.801,
+      "uplift_recuperacao_por_contato": 147.317
+    },
+    "limit": {
+      "n": 201,
+      "limite_medio_atual": 3517.98,
+      "limite_medio_recomendado": 4723.1,
+      "aumento_medio": 1205.12,
+      "utilizacao_esperada_total": 91956.51,
+      "perda_esperada_total": 8296.59,
+      "lucro_esperado_total": -5078.06,
+      "taxa_aumento": 1.0
+    },
+    "risk": {
+      "n": 201,
+      "aprovados": 130,
+      "taxa_aprovacao": 0.6468,
+      "inadimplencia_base": 0.1692,
+      "inadimplencia_aprovados": 0.0538,
+      "exposicao_aprovada": 434453.76,
+      "reducao_inadimplencia": 0.1153,
+      "threshold": 0.18
+    }
+  },
+  "fairness": {
+    "segmento": {
+      "group_column": "segmento",
+      "groups": [
+        {
+          "group": "Alto Valor",
+          "n": 31,
+          "positive_rate": 0.25806451612903225,
+          "selection_rate": 0.9032258064516129,
+          "mean_score": 0.15848564144327762,
+          "auc": 0.8858695652173914
+        },
+        {
+          "group": "Novo",
+          "n": 31,
+          "positive_rate": 0.1935483870967742,
+          "selection_rate": 0.8709677419354839,
+          "mean_score": 0.17584849214268575,
+          "auc": 0.8933333333333333
+        },
+        {
+          "group": "Recuperacao",
+          "n": 27,
+          "positive_rate": 0.07407407407407407,
+          "selection_rate": 0.8888888888888888,
+          "mean_score": 0.1480694765919209,
+          "auc": 0.9600000000000001
+        },
+        {
+          "group": "Varejo",
+          "n": 112,
+          "positive_rate": 0.16071428571428573,
+          "selection_rate": 0.8839285714285714,
+          "mean_score": 0.17024075251920706,
+          "auc": 0.8333333333333334
+        }
+      ],
+      "disparate_impact_ratio": 0.9642857142857143,
+      "passed": true
+    },
+    "regiao": {
+      "group_column": "regiao",
+      "groups": [
+        {
+          "group": "Centro-Oeste",
+          "n": 23,
+          "positive_rate": 0.34782608695652173,
+          "selection_rate": 0.782608695652174,
+          "mean_score": 0.31441450046179914,
+          "auc": 0.9166666666666667
+        },
+        {
+          "group": "Nordeste",
+          "n": 28,
+          "positive_rate": 0.10714285714285714,
+          "selection_rate": 0.8214285714285714,
+          "mean_score": 0.1688978460860922,
+          "auc": 0.8933333333333333
+        },
+        {
+          "group": "Norte",
+          "n": 12,
+          "positive_rate": 0.0,
+          "selection_rate": 1.0,
+          "mean_score": 0.0645234193414964,
+          "auc": NaN
+        },
+        {
+          "group": "Sudeste",
+          "n": 95,
+          "positive_rate": 0.17894736842105263,
+          "selection_rate": 0.9157894736842105,
+          "mean_score": 0.14898268692600036,
+          "auc": 0.8197586726998491
+        },
+        {
+          "group": "Sul",
+          "n": 43,
+          "positive_rate": 0.13953488372093023,
+          "selection_rate": 0.8837209302325582,
+          "mean_score": 0.15211369302785974,
+          "auc": 0.8918918918918919
+        }
+      ],
+      "disparate_impact_ratio": 0.782608695652174,
+      "passed": false
+    }
+  },
+  "stability": {
+    "features": [
+      {
+        "feature": "sessoes_media_3m",
+        "psi": 0.31473858252566894,
+        "status": "critico"
+      },
+      {
+        "feature": "tendencia_consumo",
+        "psi": 0.30715445437064687,
+        "status": "critico"
+      },
+      {
+        "feature": "utilizacao_max",
+        "psi": 0.19247615673714621,
+        "status": "atencao"
+      },
+      {
+        "feature": "atraso_sobre_renda",
+        "psi": 0.1747996058794316,
+        "status": "atencao"
+      },
+      {
+        "feature": "utilizacao_media",
+        "psi": 0.16354408442977042,
+        "status": "atencao"
+      },
+      {
+        "feature": "parcelas_medias_12m",
+        "psi": 0.15648503680906337,
+        "status": "atencao"
+      },
+      {
+        "feature": "consumo_medio_3m",
+        "psi": 0.1434441572782651,
+        "status": "atencao"
+      },
+      {
+        "feature": "sessoes_media",
+        "psi": 0.11955941407331096,
+        "status": "atencao"
+      },
+      {
+        "feature": "taxa_pagamento_historica",
+        "psi": 0.11747192437578889,
+        "status": "atencao"
+      },
+      {
+        "feature": "bureau_score",
+        "psi": 0.1119512581783376,
+        "status": "atencao"
+      },
+      {
+        "feature": "pct_debito_medio",
+        "psi": 0.10472527331837235,
+        "status": "atencao"
+      },
+      {
+        "feature": "pct_credito_medio",
+        "psi": 0.10345040261561142,
+        "status": "atencao"
+      },
+      {
+        "feature": "score_bureau_medio",
+        "psi": 0.09830867285889953,
+        "status": "ok"
+      },
+      {
+        "feature": "valor_atrasado_total",
+        "psi": 0.09389256631029856,
+        "status": "ok"
+      },
+      {
+        "feature": "valor_em_atraso_12m",
+        "psi": 0.09389256631029856,
+        "status": "ok"
+      },
+      {
+        "feature": "pagamentos_total",
+        "psi": 0.09376480029058286,
+        "status": "ok"
+      },
+      {
+        "feature": "ticket_medio_12m",
+        "psi": 0.09315633985393146,
+        "status": "ok"
+      },
+      {
+        "feature": "tempo_relacionamento_meses",
+        "psi": 0.09038129824951668,
+        "status": "ok"
+      },
+      {
+        "feature": "entradas_open_finance_total",
+        "psi": 0.08946363067338453,
+        "status": "ok"
+      },
+      {
+        "feature": "velocidade_scroll_media",
+        "psi": 0.08925916299825776,
+        "status": "ok"
+      },
+      {
+        "feature": "comprometimento_consumo",
+        "psi": 0.08835121473826399,
+        "status": "ok"
+      },
+      {
+        "feature": "consumo_sobre_renda",
+        "psi": 0.08835121473826399,
+        "status": "ok"
+      },
+      {
+        "feature": "pct_pix_medio",
+        "psi": 0.08814819559954033,
+        "status": "ok"
+      },
+      {
+        "feature": "compras_total_12m",
+        "psi": 0.08699368515427162,
+        "status": "ok"
+      },
+      {
+        "feature": "compras_media_mes",
+        "psi": 0.08699368515427162,
+        "status": "ok"
+      },
+      {
+        "feature": "valor_pago_total",
+        "psi": 0.08643844425253397,
+        "status": "ok"
+      },
+      {
+        "feature": "categoria_diversidade_media",
+        "psi": 0.085044416073277,
+        "status": "ok"
+      },
+      {
+        "feature": "cliques_total",
+        "psi": 0.08142858017282706,
+        "status": "ok"
+      },
+      {
+        "feature": "atraso_max",
+        "psi": 0.07955322415721794,
+        "status": "ok"
+      },
+      {
+        "feature": "atraso_max_12m",
+        "psi": 0.07955322415721794,
+        "status": "ok"
+      },
+      {
+        "feature": "limite_atual",
+        "psi": 0.07592554890872928,
+        "status": "ok"
+      },
+      {
+        "feature": "consumo_volatilidade",
+        "psi": 0.075292201723504,
+        "status": "ok"
+      },
+      {
+        "feature": "atraso_medio",
+        "psi": 0.0752553308489321,
+        "status": "ok"
+      },
+      {
+        "feature": "renda_mensal",
+        "psi": 0.0689876012120232,
+        "status": "ok"
+      },
+      {
+        "feature": "promessas_total",
+        "psi": 0.06263346197908837,
+        "status": "ok"
+      },
+      {
+        "feature": "promessas_medio_mes",
+        "psi": 0.06263346197908837,
+        "status": "ok"
+      },
+      {
+        "feature": "pct_boleto_medio",
+        "psi": 0.057771326385781134,
+        "status": "ok"
+      },
+      {
+        "feature": "tempo_sessao_medio",
+        "psi": 0.05445983336663295,
+        "status": "ok"
+      },
+      {
+        "feature": "saidas_open_finance_total",
+        "psi": 0.05234567800132967,
+        "status": "ok"
+      },
+      {
+        "feature": "dias_sem_transacao_media",
+        "psi": 0.051941875601443165,
+        "status": "ok"
+      },
+      {
+        "feature": "taxa_pagamento",
+        "psi": 0.05188523303784738,
+        "status": "ok"
+      },
+      {
+        "feature": "atraso_max_90d",
+        "psi": 0.049165063543575915,
+        "status": "ok"
+      },
+      {
+        "feature": "saldo_open_finance_medio",
+        "psi": 0.040161885918334535,
+        "status": "ok"
+      },
+      {
+        "feature": "idade",
+        "psi": 0.03631130187386379,
+        "status": "ok"
+      },
+      {
+        "feature": "exposicao_media",
+        "psi": 0.03334344606740712,
+        "status": "ok"
+      },
+      {
+        "feature": "maior_valor_em_atraso",
+        "psi": 0.029673685175566837,
+        "status": "ok"
+      },
+      {
+        "feature": "frequencia_atraso",
+        "psi": 0.027942310190409603,
+        "status": "ok"
+      },
+      {
+        "feature": "meses_com_atraso",
+        "psi": 0.027942310190409603,
+        "status": "ok"
+      },
+      {
+        "feature": "tendencia_utilizacao",
+        "psi": 0.023898547886487428,
+        "status": "ok"
+      },
+      {
+        "feature": "taxa_pagamento_90d",
+        "psi": 0.021105913089489513,
+        "status": "ok"
+      },
+      {
+        "feature": "consumo_total_12m",
+        "psi": 0.02061528302165066,
+        "status": "ok"
+      },
+      {
+        "feature": "consumo_medio_mensal",
+        "psi": 0.02061528302165066,
+        "status": "ok"
+      },
+      {
+        "feature": "contas_open_finance",
+        "psi": 0.016381771113416196,
+        "status": "ok"
+      },
+      {
+        "feature": "promessas_90d",
+        "psi": 0.015708143500087816,
+        "status": "ok"
+      },
+      {
+        "feature": "contatos_90d",
+        "psi": 0.009172661224587052,
+        "status": "ok"
+      },
+      {
+        "feature": "produtos_ativos",
+        "psi": 0.0081944997436397,
+        "status": "ok"
+      },
+      {
+        "feature": "contatos_total",
+        "psi": 0.007183251903972142,
+        "status": "ok"
+      },
+      {
+        "feature": "contatos_medio_mes",
+        "psi": 0.007183251903972142,
+        "status": "ok"
+      },
+      {
+        "feature": "taxa_promessa",
+        "psi": 0.006871213670250021,
+        "status": "ok"
+      },
+      {
+        "feature": "recencia_compra_meses",
+        "psi": 0.0,
+        "status": "ok"
+      },
+      {
+        "feature": "meses_observados",
+        "psi": 0.0,
+        "status": "ok"
+      },
+      {
+        "feature": "meses_desde_ultimo_pagamento",
+        "psi": 0.0,
+        "status": "ok"
+      }
+    ],
+    "score": {
+      "psi_score": 1.4110540074537115,
+      "status": "critico",
+      "reference_mean": 0.30241772532463074,
+      "current_mean": 0.16631441935969116
+    }
+  },
+  "train_serve_skew": {
+    "features": [
+      {
+        "feature": "meses_observados",
+        "psi": 0.0,
+        "passed": true
+      },
+      {
+        "feature": "consumo_total_12m",
+        "psi": 0.02061528302165066,
+        "passed": true
+      },
+      {
+        "feature": "consumo_medio_mensal",
+        "psi": 0.02061528302165066,
+        "passed": true
+      },
+      {
+        "feature": "consumo_volatilidade",
+        "psi": 0.075292201723504,
+        "passed": true
+      },
+      {
+        "feature": "ticket_medio_12m",
+        "psi": 0.09315633985393146,
+        "passed": true
+      },
+      {
+        "feature": "compras_total_12m",
+        "psi": 0.08699368515427162,
+        "passed": true
+      },
+      {
+        "feature": "compras_media_mes",
+        "psi": 0.08699368515427162,
+        "passed": true
+      },
+      {
+        "feature": "recencia_compra_meses",
+        "psi": 0.0,
+        "passed": true
+      },
+      {
+        "feature": "categoria_diversidade_media",
+        "psi": 0.085044416073277,
+        "passed": true
+      },
+      {
+        "feature": "parcelas_medias_12m",
+        "psi": 0.15648503680906337,
+        "passed": true
+      },
+      {
+        "feature": "pct_credito_medio",
+        "psi": 0.10345040261561142,
+        "passed": true
+      },
+      {
+        "feature": "pct_debito_medio",
+        "psi": 0.10472527331837235,
+        "passed": true
+      },
+      {
+        "feature": "pct_pix_medio",
+        "psi": 0.08814819559954033,
+        "passed": true
+      },
+      {
+        "feature": "pct_boleto_medio",
+        "psi": 0.057771326385781134,
+        "passed": true
+      },
+      {
+        "feature": "utilizacao_media",
+        "psi": 0.16354408442977042,
+        "passed": true
+      },
+      {
+        "feature": "utilizacao_max",
+        "psi": 0.19247615673714621,
+        "passed": true
+      },
+      {
+        "feature": "atraso_medio",
+        "psi": 0.0752553308489321,
+        "passed": true
+      },
+      {
+        "feature": "atraso_max",
+        "psi": 0.07955322415721794,
+        "passed": true
+      },
+      {
+        "feature": "dias_sem_transacao_media",
+        "psi": 0.051941875601443165,
+        "passed": true
+      },
+      {
+        "feature": "sessoes_media",
+        "psi": 0.11955941407331096,
+        "passed": true
+      },
+      {
+        "feature": "tempo_sessao_medio",
+        "psi": 0.05445983336663295,
+        "passed": true
+      },
+      {
+        "feature": "velocidade_scroll_media",
+        "psi": 0.08925916299825776,
+        "passed": true
+      },
+      {
+        "feature": "cliques_total",
+        "psi": 0.08142858017282706,
+        "passed": true
+      },
+      {
+        "feature": "contatos_total",
+        "psi": 0.007183251903972142,
+        "passed": true
+      },
+      {
+        "feature": "promessas_total",
+        "psi": 0.06263346197908837,
+        "passed": true
+      },
+      {
+        "feature": "pagamentos_total",
+        "psi": 0.09376480029058286,
+        "passed": true
+      },
+      {
+        "feature": "valor_pago_total",
+        "psi": 0.08643844425253397,
+        "passed": true
+      },
+      {
+        "feature": "valor_atrasado_total",
+        "psi": 0.09389256631029856,
+        "passed": true
+      },
+      {
+        "feature": "taxa_pagamento",
+        "psi": 0.05188523303784738,
+        "passed": true
+      },
+      {
+        "feature": "saldo_open_finance_medio",
+        "psi": 0.040161885918334535,
+        "passed": true
+      },
+      {
+        "feature": "entradas_open_finance_total",
+        "psi": 0.08946363067338453,
+        "passed": true
+      },
+      {
+        "feature": "saidas_open_finance_total",
+        "psi": 0.05234567800132967,
+        "passed": true
+      },
+      {
+        "feature": "score_bureau_medio",
+        "psi": 0.09830867285889953,
+        "passed": true
+      },
+      {
+        "feature": "tendencia_consumo",
+        "psi": 0.30715445437064687,
+        "passed": false
+      },
+      {
+        "feature": "tendencia_utilizacao",
+        "psi": 0.023898547886487428,
+        "passed": true
+      },
+      {
+        "feature": "consumo_medio_3m",
+        "psi": 0.1434441572782651,
+        "passed": true
+      },
+      {
+        "feature": "sessoes_media_3m",
+        "psi": 0.31473858252566894,
+        "passed": false
+      },
+      {
+        "feature": "renda_mensal",
+        "psi": 0.0689876012120232,
+        "passed": true
+      },
+      {
+        "feature": "idade",
+        "psi": 0.03631130187386379,
+        "passed": true
+      },
+      {
+        "feature": "tempo_relacionamento_meses",
+        "psi": 0.09038129824951668,
+        "passed": true
+      },
+      {
+        "feature": "limite_atual",
+        "psi": 0.07592554890872928,
+        "passed": true
+      },
+      {
+        "feature": "bureau_score",
+        "psi": 0.1119512581783376,
+        "passed": true
+      },
+      {
+        "feature": "contas_open_finance",
+        "psi": 0.016381771113416196,
+        "passed": true
+      },
+      {
+        "feature": "produtos_ativos",
+        "psi": 0.0081944997436397,
+        "passed": true
+      },
+      {
+        "feature": "comprometimento_consumo",
+        "psi": 0.08835121473826399,
+        "passed": true
+      },
+      {
+        "feature": "exposicao_media",
+        "psi": 0.03334344606740712,
+        "passed": true
+      },
+      {
+        "feature": "consumo_sobre_renda",
+        "psi": 0.08835121473826399,
+        "passed": true
+      },
+      {
+        "feature": "atraso_max_12m",
+        "psi": 0.07955322415721794,
+        "passed": true
+      },
+      {
+        "feature": "meses_com_atraso",
+        "psi": 0.027942310190409603,
+        "passed": true
+      },
+      {
+        "feature": "atraso_max_90d",
+        "psi": 0.049165063543575915,
+        "passed": true
+      },
+      {
+        "feature": "contatos_90d",
+        "psi": 0.009172661224587052,
+        "passed": true
+      },
+      {
+        "feature": "promessas_90d",
+        "psi": 0.015708143500087816,
+        "passed": true
+      },
+      {
+        "feature": "taxa_pagamento_90d",
+        "psi": 0.021105913089489513,
+        "passed": true
+      },
+      {
+        "feature": "meses_desde_ultimo_pagamento",
+        "psi": 0.0,
+        "passed": true
+      },
+      {
+        "feature": "valor_em_atraso_12m",
+        "psi": 0.09389256631029856,
+        "passed": true
+      },
+      {
+        "feature": "maior_valor_em_atraso",
+        "psi": 0.029673685175566837,
+        "passed": true
+      },
+      {
+        "feature": "contatos_medio_mes",
+        "psi": 0.007183251903972142,
+        "passed": true
+      },
+      {
+        "feature": "promessas_medio_mes",
+        "psi": 0.06263346197908837,
+        "passed": true
+      },
+      {
+        "feature": "taxa_promessa",
+        "psi": 0.006871213670250021,
+        "passed": true
+      },
+      {
+        "feature": "taxa_pagamento_historica",
+        "psi": 0.11747192437578889,
+        "passed": true
+      },
+      {
+        "feature": "frequencia_atraso",
+        "psi": 0.027942310190409603,
+        "passed": true
+      },
+      {
+        "feature": "atraso_sobre_renda",
+        "psi": 0.1747996058794316,
+        "passed": true
+      }
+    ],
+    "max_psi": 0.31473858252566894,
+    "passed": false,
+    "threshold": 0.2
+  },
+  "uplift": {
+    "n_test": 201,
+    "uplift_at_20": 0.34285714285714286,
+    "qini": 0.02471416953693073,
+    "control_rate": 0.53125,
+    "treated_rate": 0.4911242603550296,
+    "recommended_actions": {
+      "0": 60,
+      "3": 47,
+      "2": 42,
+      "4": 31,
+      "1": 21
+    }
+  },
+  "stress": {
+    "baseline": {
+      "mean_score": 0.16631441935969116,
+      "high_risk_rate": 0.35323383084577115
+    },
+    "scenarios": {
+      "choque_renda_20pct": {
+        "mean_score": 0.16928720584695883,
+        "delta_mean_score": 0.0029727864872676757,
+        "high_risk_rate": 0.19900497512437812,
+        "delta_high_risk_rate": -0.15422885572139303
+      },
+      "choque_atraso_35pct": {
+        "mean_score": 0.1851963020632146,
+        "delta_mean_score": 0.01888188270352345,
+        "high_risk_rate": 0.20398009950248755,
+        "delta_high_risk_rate": -0.1492537313432836
+      },
+      "choque_utilizacao_25pct": {
+        "mean_score": 0.22447254921661824,
+        "delta_mean_score": 0.05815812985692709,
+        "high_risk_rate": 0.26865671641791045,
+        "delta_high_risk_rate": -0.0845771144278607
+      }
+    }
+  },
+  "data_quality": {
+    "generated_at": "2026-10-22T14:57:29.983758+00:00",
+    "rows": {
+      "clientes": 600,
+      "painel": 14400,
+      "targets": 600,
+      "tratamentos": 600
+    },
+    "columns": {
+      "clientes": 14,
+      "painel": 31,
+      "targets": 12,
+      "tratamentos": 6
+    },
+    "completeness": {
+      "clientes": 1.0,
+      "painel": 1.0,
+      "targets": 1.0,
+      "tratamentos": 1.0
+    },
+    "target_rates": {
+      "pagou_30d": 0.5583333333333333,
+      "inadimplente_90d": 0.15166666666666667,
+      "aceita_limite": 0.41,
+      "consumo_alto": 0.305
+    },
+    "duplicate_panel_keys": 0,
+    "checks": [
+      {
+        "column": "idade",
+        "expected_range": [
+          18,
+          100
+        ],
+        "invalid_rows": 0,
+        "null_rows": 0,
+        "passed": true
+      },
+      {
+        "column": "renda_mensal",
+        "expected_range": [
+          1,
+          1000000
+        ],
+        "invalid_rows": 0,
+        "null_rows": 0,
+        "passed": true
+      },
+      {
+        "column": "limite_atual",
+        "expected_range": [
+          0,
+          1000000
+        ],
+        "invalid_rows": 0,
+        "null_rows": 0,
+        "passed": true
+      },
+      {
+        "column": "bureau_score",
+        "expected_range": [
+          0,
+          1000
+        ],
+        "invalid_rows": 0,
+        "null_rows": 0,
+        "passed": true
+      },
+      {
+        "column": "atraso_dias",
+        "expected_range": [
+          0,
+          365
+        ],
+        "invalid_rows": 0,
+        "null_rows": 0,
+        "passed": true
+      },
+      {
+        "column": "utilizacao_limite",
+        "expected_range": [
+          0,
+          3
+        ],
+        "invalid_rows": 0,
+        "null_rows": 0,
+        "passed": true
+      },
+      {
+        "column": "pct_credito",
+        "expected_range": [
+          0,
+          1
+        ],
+        "invalid_rows": 0,
+        "null_rows": 0,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "explainability": {
+    "tree_shap": [
+      {
+        "feature": "numeric__score_bureau_medio",
+        "mean_abs_shap": 0.983036314197316
+      },
+      {
+        "feature": "numeric__comprometimento_consumo",
+        "mean_abs_shap": 0.7371165565622871
+      },
+      {
+        "feature": "numeric__pct_boleto_medio",
+        "mean_abs_shap": 0.718734875918257
+      },
+      {
+        "feature": "numeric__taxa_promessa",
+        "mean_abs_shap": 0.49053540017958047
+      },
+      {
+        "feature": "numeric__atraso_max",
+        "mean_abs_shap": 0.4211763863104202
+      },
+      {
+        "feature": "numeric__dias_sem_transacao_media",
+        "mean_abs_shap": 0.39350112870537424
+      },
+      {
+        "feature": "numeric__atraso_sobre_renda",
+        "mean_abs_shap": 0.35210375623717344
+      },
+      {
+        "feature": "numeric__pct_pix_medio",
+        "mean_abs_shap": 0.3369374075260194
+      },
+      {
+        "feature": "numeric__contatos_total",
+        "mean_abs_shap": 0.32828820609822223
+      },
+      {
+        "feature": "numeric__utilizacao_media",
+        "mean_abs_shap": 0.29971787341383577
+      },
+      {
+        "feature": "numeric__atraso_max_90d",
+        "mean_abs_shap": 0.29174103790849265
+      },
+      {
+        "feature": "numeric__valor_pago_total",
+        "mean_abs_shap": 0.27123270951998635
+      },
+      {
+        "feature": "numeric__consumo_medio_3m",
+        "mean_abs_shap": 0.25002865503050775
+      },
+      {
+        "feature": "numeric__consumo_volatilidade",
+        "mean_abs_shap": 0.24838330021546892
+      },
+      {
+        "feature": "numeric__idade",
+        "mean_abs_shap": 0.21859785917787417
+      },
+      {
+        "feature": "numeric__tendencia_utilizacao",
+        "mean_abs_shap": 0.21745212398033364
+      },
+      {
+        "feature": "numeric__utilizacao_max",
+        "mean_abs_shap": 0.18858011674593012
+      },
+      {
+        "feature": "numeric__atraso_max_12m",
+        "mean_abs_shap": 0.1750172090080639
+      },
+      {
+        "feature": "numeric__consumo_sobre_renda",
+        "mean_abs_shap": 0.16752453591606742
+      },
+      {
+        "feature": "numeric__parcelas_medias_12m",
+        "mean_abs_shap": 0.15684620716339603
+      }
+    ],
+    "permutation": [
+      {
+        "feature": "utilizacao_media",
+        "importance": 0.007176822824938339,
+        "std": 0.0006148397342272289
+      },
+      {
+        "feature": "contatos_total",
+        "importance": 0.006252201479394065,
+        "std": 0.0010078833341194153
+      },
+      {
+        "feature": "taxa_promessa",
+        "importance": 0.00532758013384993,
+        "std": 0.001572170753025487
+      },
+      {
+        "feature": "score_bureau_medio",
+        "importance": 0.004799225079253178,
+        "std": 0.0022941908189702304
+      },
+      {
+        "feature": "consumo_medio_3m",
+        "importance": 0.004446988376188732,
+        "std": 0.0005757615723240678
+      },
+      {
+        "feature": "utilizacao_max",
+        "importance": 0.0033902782669953113,
+        "std": 0.0007613427468206732
+      },
+      {
+        "feature": "valor_pago_total",
+        "importance": 0.003346248679112318,
+        "std": 0.0005134688177919371
+      },
+      {
+        "feature": "consumo_volatilidade",
+        "importance": 0.0030380415639308933,
+        "std": 0.0012600464971164287
+      },
+      {
+        "feature": "atraso_max_90d",
+        "importance": 0.0015410355759069572,
+        "std": 0.001203385907777123
+      },
+      {
+        "feature": "tendencia_utilizacao",
+        "importance": 0.0014970059880238806,
+        "std": 0.0013670460282017732
+      },
+      {
+        "feature": "idade",
+        "importance": 0.0013208876364916855,
+        "std": 0.0016591620008292673
+      },
+      {
+        "feature": "atraso_medio",
+        "importance": 0.0013208876364916577,
+        "std": 0.0009686509334273129
+      },
+      {
+        "feature": "contatos_medio_mes",
+        "importance": 0.0011447692849594349,
+        "std": 0.00015252296649955103
+      },
+      {
+        "feature": "saldo_open_finance_medio",
+        "importance": 0.0011007396970763583,
+        "std": 0.0008926177761849691
+      },
+      {
+        "feature": "pct_debito_medio",
+        "importance": 0.0007485029940119681,
+        "std": 0.00047216472766658873
+      },
+      {
+        "feature": "taxa_pagamento_historica",
+        "importance": 0.000704473406128836,
+        "std": 0.0006471001433910816
+      },
+      {
+        "feature": "promessas_total",
+        "importance": 0.0003962662909474668,
+        "std": 0.00045544559848487414
+      },
+      {
+        "feature": "promessas_medio_mes",
+        "importance": 0.0003962662909474668,
+        "std": 7.626148324980757e-05
+      },
+      {
+        "feature": "atraso_max",
+        "importance": 0.0003962662909474113,
+        "std": 0.0011773284569496947
+      },
+      {
+        "feature": "categoria_diversidade_media",
+        "importance": 0.0003962662909474113,
+        "std": 0.0003381976817483777
+      }
+    ],
+    "edge_sequence": [
+      {
+        "feature": "velocidade_scroll",
+        "importance": 0.004945574793964624
+      },
+      {
+        "feature": "compras_qtd",
+        "importance": 0.004513522144407034
+      },
+      {
+        "feature": "valor_pago",
+        "importance": 0.004220879636704922
+      },
+      {
+        "feature": "valor_total",
+        "importance": 0.004124849569052458
+      },
+      {
+        "feature": "promessas_pagamento",
+        "importance": 0.003925397992134094
+      },
+      {
+        "feature": "pct_boleto",
+        "importance": 0.0038726176135241985
+      },
+      {
+        "feature": "tempo_medio_sessao",
+        "importance": 0.003604884259402752
+      },
+      {
+        "feature": "saidas_open_finance",
+        "importance": 0.00323654105886817
+      },
+      {
+        "feature": "pct_credito",
+        "importance": 0.0031729694455862045
+      },
+      {
+        "feature": "sessoes_app",
+        "importance": 0.0031555979512631893
+      }
+    ],
+    "edge_static": [
+      {
+        "feature": "regiao=Norte",
+        "importance": 0.03217662125825882
+      },
+      {
+        "feature": "utilizacao_media",
+        "importance": 0.03167521581053734
+      },
+      {
+        "feature": "contas_open_finance",
+        "importance": 0.025375638157129288
+      },
+      {
+        "feature": "segmento=Varejo",
+        "importance": 0.023381268605589867
+      },
+      {
+        "feature": "segmento=Alto Valor",
+        "importance": 0.021766455844044685
+      },
+      {
+        "feature": "idade",
+        "importance": 0.021522609516978264
+      },
+      {
+        "feature": "segmento=Recuperacao",
+        "importance": 0.02134036459028721
+      },
+      {
+        "feature": "limite_atual",
+        "importance": 0.020084215328097343
+      },
+      {
+        "feature": "segmento=Novo",
+        "importance": 0.019678346812725067
+      },
+      {
+        "feature": "renda_mensal",
+        "importance": 0.01858857460319996
+      }
+    ]
+  }
+}

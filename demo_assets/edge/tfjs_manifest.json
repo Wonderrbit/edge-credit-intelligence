@@ -1,0 +1,26 @@
+{
+  "model_path": "artifacts/models/edge_credit_multitask.keras",
+  "model_sha256": "2dd8938ee053bb1fa0f0ace5b1f5ef08bdf8ee68aeed26fb56c370695f7865da",
+  "tfjs_model_json": "artifacts/edge/model.json",
+  "tfjs_model_sha256": "6a306e911df3acf439b094843f91e8fc41384de2614ee6be9a615366f9d93037",
+  "weight_files": [
+    {
+      "path": "artifacts/edge/group1-shard1of1.bin",
+      "bytes": 14344,
+      "sha256": "f641cbc2fa4450721f3fd92855bc9c1260942467b2d2147e73767228843f380b"
+    }
+  ],
+  "parameters": 7172,
+  "quantization": "float16",
+  "total_bytes": 22598,
+  "inputs": [
+    "sequence",
+    "static"
+  ],
+  "outputs": [
+    "aceita_limite/Sigmoid:0",
+    "consumo_alto/Sigmoid:0",
+    "inadimplente_90d/Sigmoid:0",
+    "pagou_30d/Sigmoid:0"
+  ]
+}

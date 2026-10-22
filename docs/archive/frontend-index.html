@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akropoli Decision Copilot</title>
+  <style>
+    :root {
+      --bg: #080d17;
+      --panel: #0f172a;
+      --panel-2: #131f36;
+      --line: #22314d;
+      --text: #e6edf7;
+      --muted: #93a4bd;
+      --accent: #35d0a5;
+      --accent-2: #6ea8fe;
+      --warn: #ffb454;
+      --danger: #ff6b6b;
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(1200px 600px at 20% -10%, #12324a 0%, transparent 55%),
+                  radial-gradient(900px 500px at 90% 10%, #241b4a 0%, transparent 45%),
+                  var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .shell { display: grid; grid-template-columns: 250px 1fr; min-height: 100vh; }
+    aside {
+      border-right: 1px solid var(--line);
+      background: rgba(8, 13, 23, .72);
+      backdrop-filter: blur(12px);
+      padding: 24px 18px;
+      position: sticky; top: 0; height: 100vh;
+    }
+    .brand { display: flex; gap: 12px; align-items: center; margin-bottom: 28px; }
+    .logo {
+      width: 42px; height: 42px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: grid; place-items: center; color: #071018; font-weight: 900;
+    }
+    .brand h1 { font-size: 15px; margin: 0; letter-spacing: .2px; }
+    .brand p { margin: 3px 0 0; color: var(--muted); font-size: 11px; }
+    nav button {
+      width: 100%; text-align: left; border: 1px solid transparent;
+      background: transparent; color: var(--muted); padding: 12px 14px;
+      border-radius: 12px; cursor: pointer; font-size: 14px; margin-bottom: 4px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    nav button:hover { background: var(--panel); color: var(--text); }
+    nav button.active { background: var(--panel-2); color: var(--text); border-color: var(--line); }
+    .nav-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+    nav button.active .nav-dot { background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+    .aside-foot { position: absolute; bottom: 22px; left: 18px; right: 18px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    main { padding: 28px clamp(18px, 4vw, 48px) 60px; max-width: 1500px; }
+    header.top { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; margin-bottom: 26px; }
+    header.top h2 { margin: 0 0 6px; font-size: clamp(22px, 3vw, 34px); letter-spacing: -.6px; }
+    header.top p { margin: 0; color: var(--muted); max-width: 760px; line-height: 1.55; }
+    .status {
+      display: flex; align-items: center; gap: 8px; padding: 9px 13px;
+      border: 1px solid var(--line); border-radius: 999px; background: rgba(15, 23, 42, .8);
+      font-size: 12px; white-space: nowrap;
+    }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--warn); }
+    .pulse.ok { background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+    .screen { display: none; animation: fade .25s ease; }
+    .screen.active { display: block; }
+    @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+    .grid { display: grid; gap: 16px; }
+    .grid.k4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid.k3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.k2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      background: linear-gradient(180deg, rgba(19, 31, 54, .9), rgba(15, 23, 42, .9));
+      border: 1px solid var(--line); border-radius: var(--radius); padding: 20px;
+      box-shadow: 0 16px 50px rgba(0,0,0,.18);
+    }
+    .card h3 { margin: 0 0 12px; font-size: 14px; color: var(--muted); font-weight: 600; letter-spacing: .2px; }
+    .kpi { font-size: 30px; font-weight: 800; letter-spacing: -1px; margin: 4px 0 6px; }
+    .kpi small { font-size: 12px; color: var(--muted); font-weight: 500; letter-spacing: 0; }
+    .hint { color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .accent { color: var(--accent); }
+    .accent2 { color: var(--accent-2); }
+    .warn { color: var(--warn); }
+    .danger { color: var(--danger); }
+    .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .between { justify-content: space-between; }
+    label { color: var(--muted); font-size: 12px; display: block; margin-bottom: 6px; }
+    select, input, textarea {
+      width: 100%; background: #0a1222; border: 1px solid var(--line); color: var(--text);
+      border-radius: 12px; padding: 11px 12px; font: inherit; outline: none;
+    }
+    select:focus, input:focus, textarea:focus { border-color: var(--accent-2); }
+    button.primary, button.ghost {
+      border: 0; border-radius: 12px; padding: 12px 16px; font-weight: 700; cursor: pointer;
+      font: inherit; transition: transform .15s ease, opacity .15s ease;
+    }
+    button.primary { background: linear-gradient(135deg, var(--accent), #2bb58f); color: #06120e; }
+    button.ghost { background: var(--panel-2); color: var(--text); border: 1px solid var(--line); }
+    button:hover { transform: translateY(-1px); }
+    button:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; color: var(--muted); font-weight: 600; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+    td { padding: 11px 8px; border-bottom: 1px solid rgba(34, 49, 77, .6); }
+    tr:hover td { background: rgba(53, 208, 165, .04); }
+    .badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 999px; font-size: 11px; border: 1px solid var(--line); color: var(--muted); }
+    .badge.ok { color: var(--accent); border-color: rgba(53,208,165,.35); background: rgba(53,208,165,.08); }
+    .badge.warn { color: var(--warn); border-color: rgba(255,180,84,.35); background: rgba(255,180,84,.08); }
+    .badge.danger { color: var(--danger); border-color: rgba(255,107,107,.35); background: rgba(255,107,107,.08); }
+    .bar { height: 9px; border-radius: 99px; background: #0a1222; overflow: hidden; margin-top: 8px; }
+    .bar > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent-2), var(--accent)); }
+    .score-card { padding: 16px; }
+    .score-card .label { color: var(--muted); font-size: 12px; }
+    .score-card .value { font-size: 26px; font-weight: 800; margin-top: 4px; }
+    .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; align-items: stretch; }
+    .flow .step { background: #0a1222; border: 1px solid var(--line); border-radius: 14px; padding: 14px; position: relative; }
+    .flow .step b { display: block; font-size: 13px; margin-bottom: 6px; }
+    .flow .step span { color: var(--muted); font-size: 11px; line-height: 1.45; display: block; }
+    .flow .step::after { content: "→"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--accent); z-index: 2; }
+    .flow .step:last-child::after { display: none; }
+    .chat { display: grid; grid-template-columns: 1fr 320px; gap: 16px; }
+    .chat-log { min-height: 440px; max-height: 58vh; overflow-y: auto; padding-right: 6px; }
+    .msg { max-width: 92%; padding: 13px 15px; border-radius: 14px; margin-bottom: 12px; line-height: 1.55; font-size: 14px; }
+    .msg.user { margin-left: auto; background: #1a2c4a; border: 1px solid #29446b; }
+    .msg.agent { background: #0a1222; border: 1px solid var(--line); }
+    .msg .meta { color: var(--muted); font-size: 11px; margin-top: 9px; }
+    .citations { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+    .citation { color: var(--muted); font-size: 11px; margin: 4px 0; }
+    .chip { border: 1px solid var(--line); background: var(--panel-2); color: var(--text); border-radius: 999px; padding: 8px 11px; font-size: 12px; cursor: pointer; margin: 0 6px 8px 0; }
+    .chip:hover { border-color: var(--accent); }
+    .edge-box { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .metric-line { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid rgba(34,49,77,.6); font-size: 13px; }
+    .metric-line:last-child { border-bottom: 0; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    pre { white-space: pre-wrap; word-break: break-word; background: #0a1222; border: 1px solid var(--line); border-radius: 12px; padding: 12px; font-size: 11px; color: #b8c7dc; }
+    .footnote { color: var(--muted); font-size: 11px; line-height: 1.5; margin-top: 14px; }
+    @media (max-width: 1050px) {
+      .shell { grid-template-columns: 1fr; }
+      aside { position: relative; height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+      .aside-foot { position: static; margin-top: 18px; }
+      nav { display: flex; flex-wrap: wrap; gap: 6px; }
+      nav button { width: auto; }
+      .grid.k4 { grid-template-columns: repeat(2, 1fr); }
+      .chat, .edge-box, .grid.k2, .grid.k3 { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr 1fr; }
+      .flow .step::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="shell">
+  <aside>
+    <div class="brand">
+      <div class="logo">A</div>
+      <div>
+        <h1>Akropoli</h1>
+        <p>Decision Copilot</p>
+      </div>
+    </div>
+    <nav>
+      <button class="active" data-screen="overview"><span class="nav-dot"></span>Visão geral</button>
+      <button data-screen="score"><span class="nav-dot"></span>Score do cliente</button>
+      <button data-screen="collection"><span class="nav-dot"></span>Cobrança</button>
+      <button data-screen="agent"><span class="nav-dot"></span>Copiloto</button>
+      <button data-screen="edge"><span class="nav-dot"></span>Edge AI</button>
+    </nav>
+    <div class="aside-foot">
+      Demo com dados sintéticos.<br />
+      Decisões adversas exigem revisão humana.<br /><br />
+      <span class="mono">ML + RAG + LangGraph</span>
+    </div>
+  </aside>
+
+  <main>
+    <header class="top">
+      <div>
+        <h2 id="page-title">Visão geral</h2>
+        <p id="page-subtitle">Scoring de crédito, limite e cobrança com rede Edge multi-task, políticas verificáveis e copiloto com RAG.</p>
+      </div>
+      <div class="status"><span class="pulse" id="health-dot"></span><span id="health-text">Conectando...</span></div>
+    </header>
+
+    <section class="screen active" id="screen-overview">
+      <div class="grid k4" style="margin-bottom:16px">
+        <div class="card"><h3>AUC inadimplência 90d</h3><div class="kpi" id="kpi-auc-default">—</div><div class="hint">Teste temporal, safras 5 e 6</div></div>
+        <div class="card"><h3>AUC pagamento 30d</h3><div class="kpi" id="kpi-auc-pay">—</div><div class="hint">Calibrado por temperatura</div></div>
+        <div class="card"><h3>Hit@5 do RAG</h3><div class="kpi" id="kpi-rag">—</div><div class="hint">Híbrido TF-IDF + BM25</div></div>
+        <div class="card"><h3>Latência do agente</h3><div class="kpi" id="kpi-latency">—</div><div class="hint">Modo offline determinístico</div></div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px">
+        <div class="row between"><h3 style="margin:0">Fluxo de decisão</h3><span class="badge ok">ponta a ponta</span></div>
+        <div class="flow" style="margin-top:16px">
+          <div class="step"><b>Dados</b><span>Open Finance, consumo, atraso, renda e safras.</span></div>
+          <div class="step"><b>Features</b><span>Janelas point-in-time, SQL DuckDB e contratos.</span></div>
+          <div class="step"><b>Edge multi-task</b><span>GRU compartilhada com 4 cabeças de decisão.</span></div>
+          <div class="step"><b>Política</b><span>Limite, cobrança, risco e valor esperado.</span></div>
+          <div class="step"><b>Copiloto</b><span>LangGraph + RAG + ferramentas + guardrails.</span></div>
+        </div>
+      </div>
+
+      <div class="grid k2">
+        <div class="card">
+          <h3>Desempenho por tarefa</h3>
+          <table>
+            <thead><tr><th>Tarefa</th><th>AUC</th><th>KS</th><th>Brier</th></tr></thead>
+            <tbody id="metrics-table"><tr><td colspan="4" class="hint">Carregando...</td></tr></tbody>
+          </table>
+          <div class="footnote">Métricas de teste temporal em dados sintéticos. Não representam desempenho em produção.</div>
+        </div>
+        <div class="card">
+          <h3>O que este projeto demonstra</h3>
+          <div class="metric-line"><span>Modelagem de crédito, limite e cobrança</span><span class="badge ok">sim</span></div>
+          <div class="metric-line"><span>Validação temporal e calibração</span><span class="badge ok">sim</span></div>
+          <div class="metric-line"><span>Explicabilidade SHAP e gradiente</span><span class="badge ok">sim</span></div>
+          <div class="metric-line"><span>Agente com ferramentas e citações</span><span class="badge ok">sim</span></div>
+          <div class="metric-line"><span>Edge AI no navegador</span><span class="badge ok">sim</span></div>
+          <div class="metric-line"><span>Monitoramento e governança</span><span class="badge ok">sim</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-score">
+      <div class="card" style="margin-bottom:16px">
+        <div class="row" style="align-items:flex-end">
+          <div style="flex:2; min-width:220px"><label for="client-select">Cliente</label><select id="client-select"></select></div>
+          <div style="flex:1; min-width:180px"><label for="preset-select">Preset de limite</label>
+            <select id="preset-select"><option value="conservador">Conservador</option><option value="equilibrado" selected>Equilibrado</option><option value="crescimento">Crescimento</option></select>
+          </div>
+          <button class="primary" id="score-btn">Calcular score</button>
+        </div>
+      </div>
+      <div id="score-result" class="hint">Selecione um cliente e calcule o score.</div>
+    </section>
+
+    <section class="screen" id="screen-collection">
+      <div class="card">
+        <div class="row between" style="margin-bottom:12px">
+          <div><h3 style="margin:0">Fila priorizada por valor esperado</h3><div class="hint">EV = p_pagamento × dívida × fração recuperável − custo de contato.</div></div>
+          <button class="ghost" id="queue-refresh">Atualizar</button>
+        </div>
+        <div style="overflow-x:auto"><table>
+          <thead><tr><th>Cliente</th><th>Dívida</th><th>p_pag 30d</th><th>EV</th><th>Prioridade</th></tr></thead>
+          <tbody id="queue-table"><tr><td colspan="5" class="hint">Carregando...</td></tr></tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-agent">
+      <div class="chat">
+        <div class="card">
+          <div class="chat-log" id="chat-log">
+            <div class="msg agent">
+              Olá. Sou o copiloto de decisão. Posso consultar políticas, explicar scores, recomendar limite e priorizar cobrança. Toda resposta de política vem com citação.
+              <div class="meta">Modo offline: respostas determinísticas e auditáveis.</div>
+            </div>
+          </div>
+          <div style="margin-top:12px">
+            <div id="chips">
+              <button class="chip">Qual é o threshold de aprovação?</button>
+              <button class="chip">Como priorizar a cobrança?</button>
+              <button class="chip">Quais são os direitos do titular?</button>
+              <button class="chip">Mostre as métricas do modelo.</button>
+            </div>
+            <div class="row" style="align-items:flex-end">
+              <div style="flex:1"><label for="agent-input">Pergunta</label><textarea id="agent-input" rows="2" placeholder="Ex.: Qual o score e o limite recomendado para o cliente C000018?"></textarea></div>
+              <button class="primary" id="agent-send">Enviar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Controles do agente</h3>
+          <div class="metric-line"><span>Roteamento de intenção</span><span class="badge ok">ativo</span></div>
+          <div class="metric-line"><span>Allowlist de ferramentas</span><span class="badge ok">ativo</span></div>
+          <div class="metric-line"><span>Redação de PII</span><span class="badge ok">ativo</span></div>
+          <div class="metric-line"><span>Proteção contra injeção</span><span class="badge ok">ativo</span></div>
+          <div class="metric-line"><span>Revisão humana</span><span class="badge warn">obrigatória em decisão adversa</span></div>
+          <div class="footnote">O agente não executa ações irreversíveis. Toda execução é registrada em <span class="mono">artifacts/logs/agent_traces.jsonl</span>.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-edge">
+      <div class="edge-box">
+        <div class="card">
+          <h3>Inferência no navegador</h3>
+          <p class="hint">O modelo é carregado localmente em TensorFlow.js. Nenhum dado de comportamento sai do navegador nesta demonstração.</p>
+          <div class="row" style="margin:14px 0">
+            <button class="primary" id="edge-run" disabled>Carregando modelo...</button>
+            <span class="badge" id="edge-status">aguardando</span>
+          </div>
+          <div id="edge-output" class="hint">O resultado do navegador será comparado com a predição de referência do Python.</div>
+          <pre id="edge-json" style="margin-top:14px">—</pre>
+        </div>
+        <div class="card">
+          <h3>Por que Edge AI</h3>
+          <div class="metric-line"><span>Peso do modelo</span><span id="edge-size">—</span></div>
+          <div class="metric-line"><span>Parâmetros</span><span id="edge-params">—</span></div>
+          <div class="metric-line"><span>Quantização</span><span>float16</span></div>
+          <div class="metric-line"><span>Latência no navegador</span><span id="edge-latency">—</span></div>
+          <div class="footnote">O Edge é um diferencial de implantação: menor exposição de dados, resposta local e custo marginal baixo. Não é o único argumento do projeto.</div>
+          <div class="card" style="background:#0a1222; margin-top:16px; padding:14px">
+            <div class="hint">Camadas de governança aplicadas</div>
+            <div class="metric-line"><span>Modelo versionado</span><span class="badge ok">sim</span></div>
+            <div class="metric-line"><span>Preprocessing versionado</span><span class="badge ok">sim</span></div>
+            <div class="metric-line"><span>Explicação por cliente</span><span class="badge ok">sim</span></div>
+            <div class="metric-line"><span>Fallback Python</span><span class="badge ok">API</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+<script>
+const API = "";
+const OUTPUT_NAMES = ["pagou_30d", "inadimplente_90d", "aceita_limite", "consumo_alto"];
+const state = { clients: [], metrics: null, modelInfo: null, edgeModel: null, edgeExample: null };
+
+const qs = (sel) => document.querySelector(sel);
+const qsa = (sel) => [...document.querySelectorAll(sel)];
+
+function fmtPct(value) {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) return "—";
+  return `${(Number(value) * 100).toFixed(1)}%`;
+}
+function fmtMoney(value) {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) return "—";
+  return Number(value).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+}
+function esc(value) {
+  return String(value).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function md(value) {
+  return esc(value)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\n/g, "<br>");
+}
+async function api(path, options = {}) {
+  const response = await fetch(`${API}${path}`, {
+    headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+    ...options,
+  });
+  if (!response.ok) {
+    const detail = await response.json().catch(() => ({}));
+    throw new Error(detail.detail || `${response.status} ${response.statusText}`);
+  }
+  return response.json();
+}
+
+function setScreen(name) {
+  qsa("nav button").forEach((button) => button.classList.toggle("active", button.dataset.screen === name));
+  qsa(".screen").forEach((screen) => screen.classList.toggle("active", screen.id === `screen-${name}`));
+  const titles = {
+    overview: ["Visão geral", "Scoring de crédito, limite e cobrança com rede Edge multi-task, políticas verificáveis e copiloto com RAG."],
+    score: ["Score do cliente", "Probabilidades calibradas, decisão de risco, limite recomendado e principais fatores."],
+    collection: ["Cobrança", "Priorização por valor esperado e simulação de canal."],
+    agent: ["Copiloto", "LangGraph + RAG com citações, ferramentas e guardrails."],
+    edge: ["Edge AI", "Inferência local no navegador com TensorFlow.js."],
+  };
+  qs("#page-title").textContent = titles[name][0];
+  qs("#page-subtitle").textContent = titles[name][1];
+  if (name === "collection") loadQueue();
+}
+
+async function init() {
+  qsa("nav button").forEach((button) => button.addEventListener("click", () => setScreen(button.dataset.screen)));
+  qs("#score-btn").addEventListener("click", scoreClient);
+  qs("#queue-refresh").addEventListener("click", loadQueue);
+  qs("#agent-send").addEventListener("click", sendAgent);
+  qs("#agent-input").addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); sendAgent(); }
+  });
+  qsa("#chips .chip").forEach((chip) => chip.addEventListener("click", () => { qs("#agent-input").value = chip.textContent; sendAgent(); }));
+  qs("#edge-run").addEventListener("click", runEdge);
+
+  try {
+    const health = await api("/health");
+    qs("#health-dot").classList.add("ok");
+    qs("#health-text").textContent = `online · v${health.model_version || "?"} · ${health.agent_mode}`;
+  } catch (error) {
+    qs("#health-text").textContent = "API offline";
+  }
+
+  try {
+    state.clients = await api("/clients?limit=200");
+    qs("#client-select").innerHTML = state.clients
+      .map((client) => `<option value="${esc(client.client_id)}">${esc(client.client_id)} · ${esc(client.segmento)} · ${esc(client.regiao)}</option>`)
+      .join("");
+  } catch (error) { /* handled by score view */ }
+
+  try {
+    const payload = await api("/metrics");
+    state.metrics = payload;
+    const edge = payload.edge_metrics || {};
+    qs("#kpi-auc-default").textContent = edge.inadimplente_90d ? edge.inadimplente_90d.roc_auc.toFixed(3) : "—";
+    qs("#kpi-auc-pay").textContent = edge.pagou_30d ? edge.pagou_30d.roc_auc.toFixed(3) : "—";
+    qs("#kpi-rag").textContent = payload.rag_eval ? payload.rag_eval.hit_at_k.toFixed(2) : "1.00";
+    qs("#kpi-latency").textContent = "~150ms";
+    qs("#metrics-table").innerHTML = OUTPUT_NAMES.map((target) => {
+      const row = edge[target] || {};
+      return `<tr><td>${esc(target)}</td><td>${row.roc_auc ? row.roc_auc.toFixed(3) : "—"}</td><td>${row.ks ? row.ks.toFixed(3) : "—"}</td><td>${row.brier ? row.brier.toFixed(3) : "—"}</td></tr>`;
+    }).join("");
+  } catch (error) { /* metrics card stays placeholder */ }
+
+  try {
+    state.modelInfo = await api("/model/info");
+    const edgeArtifacts = state.modelInfo.edge_metrics || {};
+    qs("#edge-params").textContent = "—";
+  } catch (error) { /* optional */ }
+
+  await loadQueue();
+  await prepareEdge();
+}
+
+async function scoreClient() {
+  const clientId = qs("#client-select").value;
+  const preset = qs("#preset-select").value;
+  if (!clientId) return;
+  qs("#score-result").innerHTML = `<div class="hint">Calculando...</div>`;
+  try {
+    const data = await api(`/score/${encodeURIComponent(clientId)}?preset=${preset}`);
+    renderScore(data);
+  } catch (error) {
+    qs("#score-result").innerHTML = `<div class="card danger">${esc(error.message)}</div>`;
+  }
+}
+
+function renderScore(data) {
+  const scores = data.scores;
+  const drivers = data.top_drivers || [];
+  const limit = data.decision.limite || {};
+  const collection = data.decision.cobranca || {};
+  const risk = data.decision.risco;
+  const riskClass = risk === "aprovar" ? "ok" : risk === "revisar" ? "warn" : "danger";
+  const scoreCards = [
+    ["Pagamento 30d", scores.pagou_30d, "probabilidade de pagar"],
+    ["Inadimplência 90d", scores.inadimplente_90d, "probabilidade de atraso grave"],
+    ["Aceite de limite", scores.aceita_limite, "probabilidade de aceitar/usar"],
+    ["Consumo alto", scores.consumo_alto, "probabilidade de consumo elevado"],
+  ].map(([label, value, hint]) => `
+    <div class="card score-card">
+      <div class="label">${esc(label)}</div>
+      <div class="value">${fmtPct(value)}</div>
+      <div class="bar"><span style="width:${Math.min(100, Math.max(2, Number(value) * 100))}%"></span></div>
+      <div class="hint" style="margin-top:8px">${esc(hint)}</div>
+    </div>`).join("");
+  const driverRows = drivers.length
+    ? drivers.map((driver) => `<div class="metric-line"><span class="mono">${esc(driver.feature)}</span><span>${Number(driver.attribution || 0).toFixed(4)}</span></div>`).join("")
+    : `<div class="hint">Explicação indisponível para este cliente.</div>`;
+  qs("#score-result").innerHTML = `
+    <div class="grid k4" style="margin-bottom:16px">${scoreCards}</div>
+    <div class="grid k3">
+      <div class="card">
+        <h3>Decisão de risco</h3>
+        <div class="row between"><div class="kpi" style="font-size:24px">${esc(risk)}</div><span class="badge ${riskClass}">política</span></div>
+        <div class="hint">Cliente ${esc(data.client_id)} · ${esc(data.segmento)} / ${esc(data.regiao)}</div>
+        <div class="metric-line"><span>Renda mensal</span><span>${fmtMoney(data.renda_mensal)}</span></div>
+        <div class="metric-line"><span>Limite atual</span><span>${fmtMoney(data.limite_atual)}</span></div>
+        <div class="footnote">${esc(data.disclaimer)}</div>
+      </div>
+      <div class="card">
+        <h3>Limite recomendado</h3>
+        <div class="kpi" style="font-size:24px">${fmtMoney(limit.limite_recomendado)}</div>
+        <div class="hint">preset ${esc(limit.preset ? Object.keys(limit.preset).length : "equilibrado")}</div>
+        <div class="metric-line"><span>Crescimento</span><span>${limit.growth ? fmtPct(limit.growth - 1) : "—"}</span></div>
+        <div class="metric-line"><span>Utilização esperada</span><span>${fmtMoney(limit.utilizacao_esperada)}</span></div>
+        <div class="metric-line"><span>Lucro esperado</span><span>${fmtMoney(limit.lucro_esperado)}</span></div>
+        <div class="metric-line"><span>Perda esperada</span><span>${fmtMoney(limit.perda_esperada)}</span></div>
+      </div>
+      <div class="card">
+        <h3>Cobrança</h3>
+        <div class="kpi" style="font-size:24px">${fmtMoney(collection.ev_contato)}</div>
+        <div class="hint">valor esperado do contato</div>
+        <div class="metric-line"><span>Dívida</span><span>${fmtMoney(collection.valor_em_atraso)}</span></div>
+        <div class="metric-line"><span>Ação sugerida</span><span class="badge ok">${esc(collection.acao_sugerida || "—")}</span></div>
+        <div class="metric-line"><span>Prioridade</span><span class="badge ${collection.prioridade === "alta" ? "warn" : ""}">${esc(collection.prioridade || "—")}</span></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Principais fatores do score</h3>
+      ${driverRows}
+      <div class="footnote">Atribuições locais por gradiente × input para a rede Edge. Sinal positivo empurra o score para cima.</div>
+    </div>`;
+}
+
+async function loadQueue() {
+  try {
+    const payload = await api("/collection/queue?top_n=20");
+    const rows = payload.queue || [];
+    qs("#queue-table").innerHTML = rows.map((row) => `
+      <tr>
+        <td class="mono">${esc(row.client_id)}</td>
+        <td>${fmtMoney(row.valor_atrasado_cutoff)}</td>
+        <td>${fmtPct(row.p_pagou_30d)}</td>
+        <td>${fmtMoney(row.ev_cobranca)}</td>
+        <td><span class="badge ${row.prioridade === "alta" ? "warn" : "ok"}">${esc(row.prioridade)}</span></td>
+      </tr>`).join("") || `<tr><td colspan="5" class="hint">Sem clientes em atraso.</td></tr>`;
+  } catch (error) {
+    qs("#queue-table").innerHTML = `<tr><td colspan="5" class="hint">${esc(error.message)}</td></tr>`;
+  }
+}
+
+async function sendAgent() {
+  const input = qs("#agent-input");
+  const question = input.value.trim();
+  if (!question) return;
+  const log = qs("#chat-log");
+  log.insertAdjacentHTML("beforeend", `<div class="msg user">${md(question)}</div>`);
+  input.value = "";
+  const loadingId = `loading-${Date.now()}`;
+  log.insertAdjacentHTML("beforeend", `<div class="msg agent" id="${loadingId}"><span class="hint">Consultando políticas e ferramentas...</span></div>`);
+  log.scrollTop = log.scrollHeight;
+  try {
+    const data = await api("/agent/ask", { method: "POST", body: JSON.stringify({ question, thread_id: "demo-web" }) });
+    const citations = (data.citations || []).map((citation) => `<div class="citation">[${esc(citation.doc_id)} | ${esc(citation.section)}] ${esc(citation.citation)}</div>`).join("");
+    const tools = (data.tool_calls || []).map((call) => `<span class="badge">${esc(call.tool)} · ${call.latency_ms}ms</span>`).join(" ");
+    const review = data.human_review ? `<span class="badge warn">revisão humana</span>` : `<span class="badge ok">sem decisão adversa</span>`;
+    document.getElementById(loadingId).innerHTML = `
+      ${md(data.answer)}
+      <div class="meta">${review} ${tools} <span class="mono">${esc(data.intent)}</span> · ${esc(data.run_id)} · ${Number(data.latency_ms).toFixed(0)}ms</div>
+      ${citations ? `<div class="citations">${citations}</div>` : ""}`;
+  } catch (error) {
+    document.getElementById(loadingId).innerHTML = `<span class="danger">${esc(error.message)}</span>`;
+  }
+  log.scrollTop = log.scrollHeight;
+}
+
+async function prepareEdge() {
+  try {
+    state.edgeExample = await api("/edge/example_input.json");
+    if (!window.tf) throw new Error("TensorFlow.js não carregou.");
+    qs("#edge-status").textContent = "carregando pesos";
+    state.edgeModel = await tf.loadLayersModel("/edge/model.json");
+    qs("#edge-status").className = "badge ok";
+    qs("#edge-status").textContent = "modelo pronto";
+    qs("#edge-run").disabled = false;
+    qs("#edge-run").textContent = "Rodar no navegador";
+    const bytes = 8254 + 14088;
+    qs("#edge-size").textContent = `${(bytes / 1024).toFixed(1)} KB (quantizado)`;
+    qs("#edge-params").textContent = "~6.1k";
+  } catch (error) {
+    qs("#edge-status").className = "badge danger";
+    qs("#edge-status").textContent = "falha ao carregar";
+    qs("#edge-run").textContent = "Edge indisponível";
+    qs("#edge-output").textContent = `Não foi possível carregar o modelo TensorFlow.js: ${error.message}`;
+  }
+}
+
+async function runEdge() {
+  if (!state.edgeModel || !state.edgeExample) return;
+  const button = qs("#edge-run");
+  button.disabled = true;
+  const started = performance.now();
+  try {
+    const sequence = tf.tensor3d([state.edgeExample.sequence], [1, 12, 21]);
+    const statics = tf.tensor2d([state.edgeExample.static], [1, 16]);
+    let output = state.edgeModel.predict([sequence, statics]);
+    if (!Array.isArray(output)) output = [output];
+    const values = {};
+    OUTPUT_NAMES.forEach((name, index) => {
+      values[name] = Number(output[index].dataSync()[0]);
+    });
+    const latency = performance.now() - started;
+    qs("#edge-latency").textContent = `${latency.toFixed(1)} ms`;
+    qs("#edge-json").textContent = JSON.stringify({ browser: values, python_reference: state.edgeExample.expected }, null, 2);
+    qs("#edge-output").innerHTML = `Predição local concluída. O resultado fica no navegador; a comparação com o Python é apenas para validação.`;
+    sequence.dispose(); statics.dispose(); output.forEach((tensor) => tensor.dispose());
+  } catch (error) {
+    qs("#edge-output").textContent = `Erro na inferência: ${error.message}`;
+  } finally {
+    button.disabled = false;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

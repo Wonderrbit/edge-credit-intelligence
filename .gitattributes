@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.keras binary
+*.h5 binary
+*.joblib binary
+*.npz binary
+*.npy binary
+*.parquet binary
+*.png binary
+*.bin binary

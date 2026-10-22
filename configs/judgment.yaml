@@ -1,0 +1,36 @@
+judgment:
+  model: jev-latest
+  timeout_seconds: 30
+  max_retries: 2
+  confidence_review_threshold: 0.60
+  guard:
+    review_threshold: 0.35
+    block_threshold: 0.70
+    severity_block: 2.0
+  rag:
+    supported_threshold: 0.70
+    contradiction_threshold: 0.60
+    complete_threshold: 0.50
+  risk:
+    weights:
+      model_pd: 0.70
+      jev_risk: 0.30
+    jev_weights:
+      adverse_event: 0.30
+      fraud_signal: 0.25
+      capacity_stressed: 0.20
+      income_consistency: 0.15
+      documentation: 0.10
+    fraud_block: 0.80
+    adverse_review: 0.70
+    capacity_review: 0.70
+    evidence_review: 0.35
+    hardship_review: 2.50
+  collection:
+    min_channel_confidence: 0.55
+    dispute_block: 0.70
+    vulnerability_route: 0.70
+    hardship_route: 0.70
+  autonomy:
+    mode: full
+    adverse_actions_require_review: false

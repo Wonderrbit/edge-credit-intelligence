@@ -1,0 +1,23 @@
+autopilot:
+  output_dir: artifacts/autopilot
+  max_workers: 8
+  default_limit: null
+  use_jev: true
+  mode: full
+  autonomy: full
+  alert_webhook_env: MLOPS_ALERT_WEBHOOK
+  alerts:
+    delinquency_delta: 0.02
+    psi_threshold: 0.25
+    jev_error_rate: 0.05
+    approval_rate_drop: 0.10
+    max_cost_usd: 5.0
+  jev:
+    max_calls_per_run: 500
+    estimated_input_tokens_per_call: 1800
+    price_per_million_input_tokens: 0.042
+  sources:
+    clients: artifacts/serving/serving_clients.parquet
+    raw_clients: data/raw/clientes.parquet
+    collections: data/raw/cobrancas.parquet
+    open_finance: data/raw/open_finance.parquet

@@ -1,0 +1,10 @@
+{"question":"Quem precisa aprovar mudanças nas faixas de risco da política?","expected_doc_ids":["credito_001"],"expected_terms":["Risco","aprovação"]}
+{"question":"Qual é o custo padrão de um contato de cobrança?","expected_doc_ids":["cobranca_001"],"expected_terms":["12,00"]}
+{"question":"Qual fração da dívida costuma ser recuperada?","expected_doc_ids":["cobranca_001"],"expected_terms":["65%"]}
+{"question":"O que acontece se o cliente quebrar uma promessa de pagamento?","expected_doc_ids":["cobranca_001"],"expected_terms":["prioridade","promessa"]}
+{"question":"Como a renda mensal limita o valor ofertado no preset conservador?","expected_doc_ids":["limite_001"],"expected_terms":["1,5","renda"]}
+{"question":"Qual margem mensal é usada na conta de lucro esperado?","expected_doc_ids":["limite_001"],"expected_terms":["3,5%","margem"]}
+{"question":"Quem revisa o modelo antes de ele entrar em produção?","expected_doc_ids":["modelo_001"],"expected_terms":["revisão independente","produção"]}
+{"question":"Quais métricas de calibração são reportadas?","expected_doc_ids":["modelo_001"],"expected_terms":["Brier","ECE"]}
+{"question":"Por quanto tempo os registros de execução do agente são mantidos?","expected_doc_ids":["lgpd_001"],"expected_terms":["90 dias"]}
+{"question":"O que o agente deve fazer se suspeitar de vazamento de dados?","expected_doc_ids":["lgpd_001"],"expected_terms":["Segurança","vazamento"]}

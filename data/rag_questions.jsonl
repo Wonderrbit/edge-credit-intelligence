@@ -1,0 +1,15 @@
+{"question":"Qual é o threshold padrão de aprovação de crédito?","expected_doc_ids":["credito_001"],"expected_terms":["18%","threshold"]}
+{"question":"Como calcular o valor esperado de uma ação de cobrança?","expected_doc_ids":["cobranca_001"],"expected_terms":["p_pagamento","fração_recuperável"]}
+{"question":"Qual é o limite máximo no preset conservador?","expected_doc_ids":["limite_001"],"expected_terms":["1,5","renda"]}
+{"question":"Quando um caso deve ir para revisão humana?","expected_doc_ids":["credito_001","faq_001"],"expected_terms":["revisão humana"]}
+{"question":"O que é PSI e quais faixas indicam instabilidade?","expected_doc_ids":["faq_001","credito_001"],"expected_terms":["0,20","PSI"]}
+{"question":"Como é feita a validação temporal do modelo?","expected_doc_ids":["modelo_001"],"expected_terms":["safras","teste"]}
+{"question":"O que fazer com CPF e telefone antes de enviar um prompt ao agente?","expected_doc_ids":["lgpd_001"],"expected_terms":["mascarados","PII"]}
+{"question":"Quais são os canais de cobrança e seus custos?","expected_doc_ids":["cobranca_001"],"expected_terms":["WhatsApp","R$ 5,00"]}
+{"question":"Como interpretar a probabilidade de aceite de limite?","expected_doc_ids":["faq_001","limite_001"],"expected_terms":["aceitar","aumento"]}
+{"question":"Qual é a arquitetura do modelo Edge?","expected_doc_ids":["modelo_001"],"expected_terms":["GRU","quatro cabeças"]}
+{"question":"Quais são os direitos do titular de dados?","expected_doc_ids":["lgpd_001"],"expected_terms":["portabilidade","revisão"]}
+{"question":"Qual é a fórmula do limite recomendado?","expected_doc_ids":["limite_001"],"expected_terms":["crescimento_máximo","renda"]}
+{"question":"O agente pode negar crédito automaticamente?","expected_doc_ids":["faq_001"],"expected_terms":["Não","revisão humana"]}
+{"question":"Como funciona a calibração por temperatura?","expected_doc_ids":["modelo_001","faq_001"],"expected_terms":["calibração","temperatura"]}
+{"question":"Qual é a cadência de cobrança para atrasos de 31 a 60 dias?","expected_doc_ids":["cobranca_001"],"expected_terms":["ligação","negociação"]}
