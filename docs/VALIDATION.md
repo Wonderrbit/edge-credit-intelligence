@@ -8,6 +8,7 @@ Execução local em 2026-10-22 (Windows 11, Python 3.12, Docker 29.6.1, dados si
 | --- | --- |
 | `ruff check src scripts tests` | passou |
 | `pytest -q` | 28 testes passaram |
+| Clone limpo | hidratação com 21 arquivos e 28 testes passaram |
 | `scripts/make_demo_assets.py` | 21 arquivos no pacote, hidratação sem sobrescrever artefatos |
 | `scripts/run_autopilot.py --dry-run` | 201 clientes, 0 alertas, artefatos completos |
 | `scripts/run_autopilot.py` sem chave Jev | fallback determinístico e alerta de erro de Jev |
@@ -41,14 +42,17 @@ A imagem slim foi gerada com o binário atual do slim, target na rede `bridge`, 
 
 No Docker 29, o slim encerra o relatório com `unsupported value: NaN` e ID mismatch após gerar a imagem. A imagem resultante foi inspecionada, executada como usuário `app` e validada. O `slim` antigo (`dslim/slim:latest`) não é compatível com a API mínima 1.40 e foi descartado.
 
+As imagens full e slim foram varridas para `.env`, caminhos `C:\Users` e bytecode com caminho local. Nenhum arquivo suspeito foi encontrado. O pacote de ambiente cifrado foi decifrado em arquivo temporário e comparado por SHA-256 com o `.env` original antes de ser apagado.
+
 ## Publicação
 
 | Item | Resultado |
 | --- | --- |
-| Repositório privado | pendente de execução |
-| GitHub Actions | workflow de CI e publicação preparado |
-| GHCR | pendente de execução |
-| Clone limpo | pendente de execução |
+| Repositório privado | `Wonderrbit/edge-credit-intelligence` publicado |
+| GitHub Actions | workflow preparado; execução bloqueada por limite de billing da conta |
+| GHCR | `latest` e `slim` publicados como pacotes privados |
+| Clone limpo | validado localmente a partir do commit `0caf1a2` |
+| Pacote de ambiente | `.env` cifrado fora do repositório; hash de decifragem conferido |
 
 ## Pendências para produção
 
