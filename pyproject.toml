@@ -19,7 +19,6 @@ dependencies = [
   "matplotlib>=3.8",
   "tensorflow>=2.16",
   "tf-keras>=2.16",
-  "tensorflowjs>=4.20",
   "duckdb>=1.0",
   "pyarrow>=15.0",
   "joblib>=1.4",

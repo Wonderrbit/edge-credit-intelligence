@@ -1,0 +1,11 @@
+# Optional dependencies for TensorFlow.js export.
+# Run after installing requirements.txt:
+#   python -m pip install -r requirements-export.txt
+#   python -m pip install --no-deps tensorflowjs==4.22.0
+# The --no-deps step bypasses the tensorflowjs packaging~=23.1 pin,
+# which conflicts with typesafe-sdk's packaging>=24.0 requirement.
+jax>=0.4.13
+jaxlib>=0.4.13
+flax>=0.7.2
+importlib-resources>=5.9.0
+six>=1.12.0

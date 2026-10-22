@@ -38,7 +38,15 @@ def export_tfjs(
 
     _stub_optional_tfjs_dependencies()
     import tf_keras
-    from tensorflowjs.converters import save_keras_model
+
+    try:
+        from tensorflowjs.converters import save_keras_model
+    except ImportError as exc:
+        raise SystemExit(
+            "tensorflowjs nao instalado. Rode: "
+            "python -m pip install -r requirements-export.txt && "
+            "python -m pip install --no-deps tensorflowjs==4.22.0"
+        ) from exc
 
     model = tf_keras.models.load_model(model_path, compile=False)
     quantization_map = {"float16": "*"} if quantization == "float16" else None

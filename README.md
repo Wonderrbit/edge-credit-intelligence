@@ -138,6 +138,14 @@ python scripts/run_autopilot.py --mode full --dry-run --limit 50
 python scripts/run_api.py
 ```
 
+A demo já inclui os artefatos TF.js, então o fluxo acima não exige `tensorflowjs`. Para reexportar o modelo:
+
+```bash
+python -m pip install -r requirements-export.txt
+python -m pip install --no-deps tensorflowjs==4.22.0
+python scripts/run_export.py
+```
+
 A API sobe em `http://127.0.0.1:8000`. Em outro terminal:
 
 ```bash
@@ -227,7 +235,7 @@ docker pull ghcr.io/wonderrbit/edge-credit-intelligence:latest
 docker pull ghcr.io/wonderrbit/edge-credit-intelligence:slim
 ```
 
-A imagem completa tem cerca de 4,03 GB. A variante slim tem cerca de 2,83 GB e foi validada com health, score, agente e autopilot offline. Para reconstruir a slim, consulte [`docs/VALIDATION.md`](docs/VALIDATION.md).
+Se o pacote GHCR estiver privado, use o build local acima ou ajuste a visibilidade em **Package settings**. A imagem completa tem cerca de 4,03 GB. A variante slim tem cerca de 2,83 GB e foi validada com health, score, agente e autopilot offline. Para reconstruir a slim, consulte [`docs/VALIDATION.md`](docs/VALIDATION.md).
 
 ## Testes e CI
 
@@ -295,4 +303,4 @@ O que o repositório demonstra:
 
 ## Licença
 
-Proprietário e confidencial. O uso é permitido apenas para avaliação interna autorizada. Consulte [`LICENSE`](LICENSE).
+Proprietário. O código é público apenas para avaliação técnica; uso comercial exige autorização. Consulte [`LICENSE`](LICENSE).

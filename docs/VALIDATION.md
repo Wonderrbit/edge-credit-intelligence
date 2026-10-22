@@ -48,9 +48,9 @@ As imagens full e slim foram varridas para `.env`, caminhos `C:\Users` e bytecod
 
 | Item | Resultado |
 | --- | --- |
-| Repositório privado | `Wonderrbit/edge-credit-intelligence` publicado |
-| GitHub Actions | workflow preparado; execução bloqueada por limite de billing da conta |
-| GHCR | `latest` e `slim` publicados como pacotes privados |
+| Repositório público | `Wonderrbit/edge-credit-intelligence` publicado |
+| GitHub Actions | workflow preparado; falha de billing resolvida com a visibilidade pública |
+| GHCR | `latest` e `slim` publicados; pacote privado, com build local documentado |
 | Clone limpo | validado localmente a partir do commit `0caf1a2` |
 | Pacote de ambiente | `.env` cifrado fora do repositório; hash de decifragem conferido |
 
