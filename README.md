@@ -1,4 +1,6 @@
 ﻿# Edge Credit Intelligence
+ 
+ Transforma dados de clientes em decisões de crédito, limite e cobrança, com modelo calibrado, políticas, agente RAG, revisão humana e autopilot auditável via API e Docker.
 
 [![CI](https://github.com/Wonderrbit/edge-credit-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/Wonderrbit/edge-credit-intelligence/actions/workflows/ci.yml)
 
