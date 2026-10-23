@@ -1,5 +1,7 @@
 ﻿# Edge Credit Intelligence
 
+[![CI](https://github.com/Wonderrbit/edge-credit-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/Wonderrbit/edge-credit-intelligence/actions/workflows/ci.yml)
+
 Protótipo de motor de decisão para crédito e cobrança. O projeto combina um modelo multitarefa de risco, políticas de negócio, indicadores de carteira e um agente com RAG e julgamento estruturado. A saída principal é uma API para consumo por outros sistemas, com artefatos de auditoria e um autopilot executável por linha de comando.
 
 O repositório é destinado a avaliação técnica e testes controlados. Ele não é um sistema pronto para decisão de crédito em produção. Os dados são sintéticos e as métricas não substituem validação em uma carteira real.
